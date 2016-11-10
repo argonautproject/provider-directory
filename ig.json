@@ -11,10 +11,20 @@
 		]
 	},
 	"version": "1.7.0",
-	"canonicalBase": "http://hl7.org/fhir/us/core",
+	"canonicalBase": "http://hl7.org/fhir/us/argo-pd",
 	"tool": "jekyll",
 	"sct-edition": "http://snomed.info/sct/731000124108",
+	"dependencyList": [
+		{
+			"name": "uscore",
+			"location": "http://ig.fhir.me/Healthedata1/US-Core",
+			"source": "resources"
+		}
+	],
 	"spreadsheets": [
+			],
+	"extraTemplates": [
+				"mappings"
 			],
 	"defaults": {
 		"Any": {
@@ -27,9 +37,11 @@
 		"ConceptMap": {
 			"template-base": "cm.html"
 		},
-		"StructureDefinition": {
-			"template-base": "sd.html"
-		}
+			"StructureDefinition": {
+				"template-base": "sd.html",
+				"template-defns": "sd-definitions.html",
+				"template-mappings": "sd-mappings.html"
+			}
 	},
 	"source": "ig.xml",
 	"resources": {}
