@@ -4,7 +4,6 @@
 -----
 This is the repository for STU3 Argo-PD Resources
 
-
 ### NOTE the CI build is currently not working (11/1/2016) a recent build is available [here](http://healthedatainc.com/go-ftp/Argo-PD/)
 
 GitHub will automatically trigger a new build whenever you commit changes.
