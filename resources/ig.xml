@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Hidden IG for de facto IG publishing-->
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7-fhir.github.io/observation.xsd">
+	<id value="ig"/>
+	<url value="http://hl7.org/fhir/us/core/ImplementationGuide/ig"/>
+	<name value="Implementation Guide Template"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="FHIR Project"/>
+	<package>
+		<name value="base"/>
+
+	</package>
+	<page>
+		<source value="index.html"/>
+		<title value="blah"/>
+		<kind value="page"/>
+	</page>
+</ImplementationGuide>

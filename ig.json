@@ -1,0 +1,36 @@
+{
+	"paths": {
+		"temp": "temp",
+		"specification": "http://build.fhir.org",
+		"qa": "qa",
+		"txCache": "txCache",
+		"output": "output",
+		"pages": "pages",
+		"resources": [
+			"resources", "examples"
+		]
+	},
+	"version": "1.7.0",
+	"canonicalBase": "http://hl7.org/fhir/us/core",
+	"tool": "jekyll",
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"spreadsheets": [
+			],
+	"defaults": {
+		"Any": {
+			"template-format": "format.html",
+			"template-base": "base.html"
+		},
+		"ValueSet": {
+			"template-base": "vs.html"
+		},
+		"ConceptMap": {
+			"template-base": "cm.html"
+		},
+		"StructureDefinition": {
+			"template-base": "sd.html"
+		}
+	},
+	"source": "ig.xml",
+	"resources": {}
+}
