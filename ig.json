@@ -21,7 +21,7 @@
 			"source": "resources"
 		}
 	],
-	"spreadsheets": [
+	"spreadsheets": [practitionerrole-profile-spreadsheet.xml
 			],
 	"extraTemplates": [
 				"mappings"
