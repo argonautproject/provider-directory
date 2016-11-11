@@ -9,7 +9,18 @@
 	<publisher value="FHIR Project"/>
 	<package>
 		<name value="base"/>
-
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/provider-specialty"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/provider-role"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>

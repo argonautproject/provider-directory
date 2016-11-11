@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
-	<id value="us-core-provider-role"/>
-	<url value="http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role"/>
-	<name value="US Core Provider Role (NUCC)"/>
+	<id value="provider-role"/>
+	<url value="http://hl7.org/fhir/us/argo-pd/ValueSet/provider-role"/>
+	<name value="Argonaut Provider Directory Provider Role (NUCC)"/>
 	<status value="draft"/>
 	<publisher value="FHIR Project Team"/>
 	<contact>

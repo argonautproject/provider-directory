@@ -1,4 +1,20 @@
 {
+	"dependencyList": [
+		{
+			"source": "resources",
+			"name": "uscore",
+			"location": "http://ig.fhir.me/Healthedata1/US-Core"
+		}
+	],
+	"tool": "jekyll",
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"spreadsheets": [
+		"practitionerrole-profile-spreadsheet.xml"
+	],
+	"extraTemplates": [
+		"mappings"
+	],
+	"canonicalBase": "http://hl7.org/fhir/us/argo-pd",
 	"paths": {
 		"temp": "temp",
 		"specification": "http://build.fhir.org",
@@ -10,39 +26,31 @@
 			"resources", "examples"
 		]
 	},
+	"source": "ig.xml",
 	"version": "1.7.0",
-	"canonicalBase": "http://hl7.org/fhir/us/argo-pd",
-	"tool": "jekyll",
-	"sct-edition": "http://snomed.info/sct/731000124108",
-	"dependencyList": [
-		{
-			"name": "uscore",
-			"location": "http://ig.fhir.me/Healthedata1/US-Core",
-			"source": "resources"
-		}
-	],
-	"spreadsheets": [practitionerrole-profile-spreadsheet.xml
-			],
-	"extraTemplates": [
-				"mappings"
-			],
 	"defaults": {
+		"StructureDefinition": {
+			"template-defns": "sd-definitions.html",
+			"template-base": "sd.html",
+			"template-mappings": "sd-mappings.html"
+		},
+		"ConceptMap": {
+			"template-base": "cm.html"
+		},
 		"Any": {
 			"template-format": "format.html",
 			"template-base": "base.html"
 		},
 		"ValueSet": {
 			"template-base": "vs.html"
-		},
-		"ConceptMap": {
-			"template-base": "cm.html"
-		},
-			"StructureDefinition": {
-				"template-base": "sd.html",
-				"template-defns": "sd-definitions.html",
-				"template-mappings": "sd-mappings.html"
-			}
+		}
 	},
-	"source": "ig.xml",
-	"resources": {}
+	"resources": {
+		"ValueSet/provider-role": {
+			"base": "valueset-provider-role.html"
+		},
+		"ValueSet/provider-specialty": {
+			"base": "valueset-provider-specialty.html"
+		}
+	}
 }

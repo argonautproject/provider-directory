@@ -20,7 +20,7 @@
   <WindowTopX>8840</WindowTopX>
   <WindowTopY>1140</WindowTopY>
   <TabRatio>663</TabRatio>
-  <ActiveSheet>2</ActiveSheet>
+  <ActiveSheet>7</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -905,6 +905,13 @@
     ss:Bold="1"/>
    <Interior/>
    <NumberFormat ss:Format="yyyy\-mm\-dd;@"/>
+  </Style>
+  <Style ss:ID="s174" ss:Parent="s62">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
@@ -3548,7 +3555,6 @@
    </Print>
    <TabColorIndex>51</TabColorIndex>
    <PageLayoutZoom>0</PageLayoutZoom>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -6286,7 +6292,8 @@
     <Cell ss:StyleID="s134"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s134"><Data ss:Type="String">required</Data></Cell>
     <Cell ss:StyleID="s134"/>
-    <Cell ss:StyleID="s134"><Data ss:Type="String">http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role</Data></Cell>
+    <Cell ss:StyleID="s174" ss:HRef="http://hl7.org/fhir/us/argo-pd/ValueSet/provider-role"><Data
+      ss:Type="String">http://hl7.org/fhir/us/argo-pd/ValueSet/provider-role</Data></Cell>
     <Cell ss:StyleID="s134"/>
     <Cell ss:StyleID="s134"/>
     <Cell ss:StyleID="s134"/>
@@ -6302,7 +6309,7 @@
     <Cell ss:StyleID="s137"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s137"><Data ss:Type="String">required</Data></Cell>
     <Cell ss:StyleID="s137"/>
-    <Cell ss:StyleID="s137"><Data ss:Type="String">http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty</Data></Cell>
+    <Cell ss:StyleID="s137"><Data ss:Type="String">http://hl7.org/fhir/us/argo-pd/ValueSet/provider-specialty</Data></Cell>
     <Cell ss:StyleID="s137"/>
     <Cell ss:StyleID="s137"/>
     <Cell ss:StyleID="s137"/>
@@ -6759,6 +6766,7 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -6778,7 +6786,6 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
      <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
