@@ -9,7 +9,7 @@
 	"tool": "jekyll",
 	"sct-edition": "http://snomed.info/sct/731000124108",
 	"spreadsheets": [
-		"practitionerrole-profile-spreadsheet.xml"
+		"endpoint-profile-spreadsheet.xml", "practitionerrole-profile-spreadsheet.xml"
 	],
 	"extraTemplates": [
 		"mappings"
