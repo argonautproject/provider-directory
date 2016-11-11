@@ -40,7 +40,6 @@
 
 -----------
 
-
 **GET [base]/Endpoint?name=[string]**
 
 *Support:* Mandatory
