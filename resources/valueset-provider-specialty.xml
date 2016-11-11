@@ -2,7 +2,7 @@
 <ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
 	<id value="provider-specialty"/>
 	<url value="http://hl7.org/fhir/us/argo-pd/ValueSet/provider-specialty"/>
-	<name value="Argonaut Provider D Provider Speciality (NUCC)"/>
+	<name value="Argonaut Provider Directory Provider Speciality (NUCC)"/>
 	<status value="draft"/>
 	<publisher value="FHIR Project Team"/>
 	<contact>
