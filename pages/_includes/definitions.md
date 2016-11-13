@@ -1,4 +1,4 @@
-Definitions
+## Definitions
 -----------
 
 #### Extensible binding for CodeableConcept Datatype
@@ -17,8 +17,9 @@ Note that is will still be ambiguous when using a status based queries
 
 Example: AllergyIntolerance resource with a status that is text only or cannot be mapped to the status value set.
 
-    {
-        "resourceType”:“AllergyIntolerance”,
+
+    \{
+       "resourceType”:“AllergyIntolerance”,
        ...
        “status”:{
         “url” : “[http://hl7.org/fhir/StructureDefinition/data-absent-reason]”,
@@ -26,6 +27,7 @@ Example: AllergyIntolerance resource with a status that is text only or cannot b
         ...
       },
      }
+
 
 #### Using multiple codes with CodeableConcept Datatype
 
@@ -87,7 +89,7 @@ Example of translation of NDC vaccine code to CVX code.
 
 The interactions on IG page are defined like this:
 
-` `**`GET`` ``[base]/[Resource-type]/[id]`` ``{parameters}`**
+ **`GET [base]/[Resource-type]/[id] {parameters}`**
 
 -   GET is the HTTP verb used for fetching a resource
 -   Content surrounded by \[\] is mandatory, and will be replaced by the string literal identified.
@@ -103,7 +105,7 @@ For more information see the [FHIR RESTful API]
 
 In the simplest case, a search is executed by performing a GET operation in the RESTful framework:
 
-**`GET`` ``[base]/[Resource-type]?name=value&...`**
+**GET [base]/[Resource-type]?name=value&...**
 
 For this RESTful search (see definition in RESTful API), the parameters are a series of name=\[value\] pairs encoded in the URL. The search parameter names are defined for each resource. For example the Observation resource the name “code” for search on the LOINC code. See [Searching] for more information about searching in REST, messaging, and services.
 
@@ -113,7 +115,7 @@ There are three ways to search for resources associated with a specific patient 
 
 1. An explicitly defined patient that controls which set of resources are being searched by resource type:
 
-**`GET [base]/[Resource-type]?patient=24342{&otherparameters}`**
+**GET [base]/[Resource-type]?patient=24342{&otherparameters}**
 
 Note that all the search interactions in this IG are published using the above syntax.
 
@@ -130,7 +132,7 @@ However there are several variations to this syntax: (see [Issue \#39])
 
 2. if the patient is implicit in the context (e.g. UC-1 above or using SMART), then this search applies:
 
-**`GET [base]/[Resource-type]?other-parameters`**
+**GET [base]/[Resource-type]?other-parameters**
 
 NOTE:
 
@@ -154,4 +156,4 @@ In order to manage the number of search results returned, the server may choose 
   [compartment]: http://hl7.org/fhir/DSTU2/compartments.html#compartments
   [core specification]: http://hl7-fhir.github.io/extensibility.html#2.20.0.2.2
   [DataAbsentReason Extension]: http://hl7-fhir.github.io/extension-data-absent-reason.html
-  [`http://hl7.org/fhir/StructureDefinition/data-absent-reason`]: http://hl7.org/fhir/StructureDefinition/data-absent-reason
+  [http://hl7.org/fhir/StructureDefinition/data-absent-reason]: http://hl7.org/fhir/StructureDefinition/data-absent-reason

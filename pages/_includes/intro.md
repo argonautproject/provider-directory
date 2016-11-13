@@ -1,31 +1,31 @@
+## Provider Directory
 
-## Provider Directory ##
 
-----
-
-The Argonaut project Provider Directory guide provides the foundation for a robust provider directory. It outlines the key data elements for any provider directory and basic query guidance for 4 use cases.
+The Argonaut project Provider Directory guide is based upon the core [FHIR STU3 API](http://fhir.build.org) and contains the foundation for a robust provider directory.  It describes the use cases and search expectations for finding a practitioner or organization. It outlines the key data elements for any provider directory and basic query guidance.  
 
 The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory] and the [ONC Provider Directory Workshop].
 
-#### Use Cases ####
 
-1.  Practitioner search by demographics
+#### Use Cases
+
+
+1.  Search for Practitioner by demographics
     -   Name
     -   Specialty
 
-2.  Practitioner search within a region (city, state)
+2.  Search for Practitioner within a region (city, state)
     -   Practitioner or specialty within a specified distance - 10 miles from patient home
     -   Show me every one of this specialty in the city
 
-3.  Organization and facility search by attributes
+3.  Search for Organization and facility by:
     -   Name
     -   Address
 
-4.  Practitioner search by organizational relationships
+4.  Search for Practitioner by organizational relationships
     -   Practitioner in a specific health organization (e.g. Baptist Health Organization)
     -   Practitioner in a specific clinic (e.g. West Clinic)
 
-#### Example Searches ####
+Example Searches
 
 1.  Locate a Provider's Direct address
     1.  Search Practitioner by Name or Specialty
@@ -37,7 +37,7 @@ The requirements for the Argonaut Provider Directory data model were drawn from 
     2.  Select appropriate Practitioner.
     3.  Retrieve Practitioner.role.telecom with Patient.telecom.system=phone|fax
 
-#### Assumptions and Preconditions ####
+#### Assumptions and Preconditions
 
 Electronic service information will be available when the Practitioner or Organization is returned
 
@@ -48,9 +48,9 @@ Additional implementation guidance on the use cases and core data elements will 
 
 
 
-### [Argonaut Provider Directory Connectathon] ####
+#### [Argonaut Provider Directory Connectathon]
 
------
+------------------------------------------------------------------------
 
   [IHE Healthcare Provider Directory]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf
   [ONC Provider Directory Workshop]: https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents
