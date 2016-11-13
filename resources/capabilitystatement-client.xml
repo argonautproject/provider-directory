@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/valueset.xsd">
+	<id value="client"/>
+	<name value="Argonaut Provider Directory Client"/>
+	<status value="draft"/>
+	<date value="2016-11-13"/>
+	<publisher value="FHIR Project Team"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This profile defines the expected capabilities of a client when conforming to the Argonaut Provider Directory Implementation Guide."/>
+	<kind value="requirements"/>
+	<fhirVersion value="STU3"/>
+	<acceptUnknown value="extensions"/>
+	<format value="xml"/>
+	<format value="json"/>
+	<rest>
+		<mode value="client"/>
+		<documentation value="The Argonaut Provider Directory Client SHOULD support querying of one or more FHIR resources using appropriate Argonaut Provider Directory profile(s), RESTful operations defined for the profile and Search parameters identified for the profile."/>
+		<security>
+			<description value="Argonaut Provider Directory Clients SHALL implement applicable security requirements documented in the Argonaut Provider Directory IG."/>
+		</security>
+		<resource>
+			<type value="Practitioner"/>
+			<profile>
+				<reference value="http://hl7.org/fhir/us/argo-pd/StructureDefinition/argo-practitioner"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Provider Director Providers using search criteria defined for the [Argonaut Provider Directory Use Cases](index.html#usecases) "/>
+			</interaction>
+		</resource>
+				<resource>
+			<type value="Organization"/>
+			<profile>
+				<reference value="http://hl7.org/fhir/us/argo-pd/StructureDefinition/argo-organization"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Provider Organization resources using search criteria defined for the [Argonaut Provider Directory Use Cases](index.html#usecases) "/>
+			</interaction>
+		</resource>
+	</rest>
+</CapabilityStatement>

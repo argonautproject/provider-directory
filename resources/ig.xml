@@ -21,6 +21,18 @@
 				<reference value="ValueSet/provider-role"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/server"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="CapabilityStatement/client"/>
+			</sourceReference>
+		</resource>
 	</package>
 	<page>
 		<source value="index.html"/>
