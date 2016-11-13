@@ -9,7 +9,7 @@
   <div class="container">  <!-- container -->
    <ul class="breadcrumb">
             <li title="Argonaut"><a href="index.html"><b>Home</b></a></li>
-
+            <li title="Defintions"><a href="definitions.html"><b>Home</b></a></li>
    </ul>
   </div>  <!-- /container -->
  </div>  <!-- /segment-breadcrumb -->
@@ -18,36 +18,7 @@
 
   <!-- ============CONTENT CONTENT=============== -->
 
-{% capture my-include %}{% include intro.md %}{% endcapture %}{{ my-include | markdownify }}
-
-<h2>
-Profiles :
-</h2>
-
-
-{%  include list-profiles.xhtml %}
-
-<h2>
-ValueSets:
-</h2>
-{%  include list-valuesets.xhtml %}
-
-
-<!--
-<h2>
-Extensions:
-</h2>
-
-
- include list-extensions.xhtml
-
-
-<h2>
-Operations:
-</h2>
-
-include list-operationdefinitions.xhtml
--->
+{% capture my-include %}{% include definitions.md %}{% endcapture %}{{ my-include | markdownify }}
 
   <!-- ==============END CONTENT END CONTENT=================== -->
 
