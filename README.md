@@ -16,9 +16,9 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 ### Find your rendered IG automatically available at
 
-Temporarily located here: http://healthedatainc.com/go-ftp/Argo-PD/
+(If the CI Build is unavailable a recent version of the build is available here : http://healthedatainc.com/go-ftp/Argo-PD/)
 
-(future) http://ig.fhir.me/Healthedata1/Argo-PD
+http://ig.fhir.me/Healthedata1/Argo-PD
 
 ### Find debugging info about the build
 
