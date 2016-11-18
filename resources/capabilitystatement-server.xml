@@ -34,8 +34,8 @@
 	</profile>
 	<rest>
 		<mode value="server"/>
-		<documentation value="The Argonaut Provider Directory Server SHALL support the Argonaut Provider Directory Profile: 
-		
+		<documentation value="The Argonaut Provider Directory Server SHALL support the Argonaut Provider Directory Profile:
+
 - Argonaut Provider Directory Endpoint
 - Argonaut Provider Directory Location
 - Argonaut Provider Directory Organization
@@ -52,21 +52,21 @@
 				<reference value="http://healthedatainc.com/go-ftp/Argo-PD/StructureDefinition-argo-practitioner.html"/>
 			</profile>
 			<interaction>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHOULD"/>
 				</extension>
 				<code value="search-type"/>
 				<documentation value="Allows discovery of existing Argonaut Provider Director Providers using search criteria defined for the [Argonaut Provider Directory Use Cases](index.html#usecases) "/>
 			</interaction>
 			<interaction>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<code value="read"/>
 				<documentation value="Allows retrieval of a specific Argonaut Provider Directory Provider by id"/>
 			</interaction>
 			<searchParam>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="name"/>
@@ -74,7 +74,7 @@
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="family"/>
@@ -82,7 +82,7 @@
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="given"/>
@@ -90,7 +90,7 @@
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="identifier"/>
@@ -104,21 +104,21 @@
 				<reference value="http://healthedatainc.com/go-ftp/Argo-PD/StructureDefinition-argo-rrganization.html"/>
 			</profile>
 			<interaction>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHOULD"/>
 				</extension>
 				<code value="search-type"/>
 				<documentation value="Allows discovery of existing Argonaut Provider Director Providers using search criteria defined for the [Argonaut Provider Directory Use Cases](index.html#usecases) "/>
 			</interaction>
 			<interaction>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<code value="read"/>
 				<documentation value="Allows retrieval of a specific Argonaut Provider Directory Provider Organization by id"/>
 			</interaction>
 			<searchParam>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="name"/>
@@ -126,7 +126,7 @@
 				<type value="string"/>
 			</searchParam>
 			<searchParam>
-				<extension url="http://build.fhir.org/StructureDefinition/capabilitystatement-expectation">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation ">
 					<valueCode value="SHALL"/>
 				</extension>
 				<name value="address"/>

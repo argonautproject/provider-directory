@@ -1,42 +1,13 @@
 {
-	"tool": "jekyll",
-	"spreadsheets": [
-		"endpoint-profile-spreadsheet.xml", "location-profile-spreadsheet.xml", "organization-profile-spreadsheet.xml", "practitioner-profile-spreadsheet.xml", "practitionerrole-profile-spreadsheet.xml"
-	],
 	"extraTemplates": [
 		"mappings"
 	],
-	"sct-edition": "http://snomed.info/sct/731000124108",
-	"resources": {
-		"CapabilityStatement/client": {
-			"base": "capabilitystatement-client.html"
-		},
-		"StructureDefinition/argo-organization": {
-			"base": "structuredefinition-argo-organization.html"
-		},
-		"StructureDefinition/argo-endpoint": {
-			"base": "structuredefinition-argo-endpoint.html"
-		},
-		"ValueSet/provider-specialty": {
-			"base": "valueset-provider-specialty.html"
-		},
-		"ValueSet/provider-role": {
-			"base": "valueset-provider-role.html"
-		},
-		"CapabilityStatement/server": {
-			"base": "capabilitystatement-server.html"
-		},
-		"StructureDefinition/argo-practitionerrole": {
-			"base": "structuredefinition-argo-practitionerrole.html"
-		},
-		"StructureDefinition/argo-location": {
-			"base": "structuredefinition-argo-location.html"
-		},
-		"StructureDefinition/argo-practitioner": {
-			"base": "structuredefinition-argo-practitioner.html"
-		}
-	},
+	"tool": "jekyll",
 	"defaults": {
+		"Any": {
+			"template-base": "base.html",
+			"template-format": "format.html"
+		},
 		"ConceptMap": {
 			"template-base": "cm.html"
 		},
@@ -47,31 +18,65 @@
 		},
 		"ValueSet": {
 			"template-base": "vs.html"
-		},
-		"Any": {
-			"template-format": "format.html",
-			"template-base": "base.html"
 		}
 	},
 	"version": "1.7.0",
-	"source": "ig.xml",
 	"paths": {
-		"qa": "qa",
-		"pages": "pages",
 		"temp": "temp",
-		"output": "output",
-		"specification": "http://build.fhir.org",
+		"txCache": "txCache",
+		"pages": "pages",
+		"qa": "qa",
 		"resources": [
 			"resources", "examples"
 		],
-		"txCache": "txCache"
+		"specification": "http://build.fhir.org",
+		"output": "output"
+	},
+	"spreadsheets": [
+		"endpoint-profile-spreadsheet.xml", "location-profile-spreadsheet.xml", "organization-profile-spreadsheet.xml", "practitioner-profile-spreadsheet.xml", "practitionerrole-profile-spreadsheet.xml"
+	],
+	"source": "ig.xml",
+	"resources": {
+		"StructureDefinition/argo-practitioner": {
+			"base": "structuredefinition-argo-practitioner.html",
+			"defns": "argo-practitionerdefinitions.html"
+		},
+		"ValueSet/provider-role": {
+			"base": "valueset-provider-role.html"
+		},
+		"ValueSet/provider-specialty": {
+			"base": "valueset-provider-specialty.html"
+		},
+		"StructureDefinition/argo-location": {
+			"base": "structuredefinition-argo-location.html",
+			"defns": "argo-locationdefinitions.html"
+		},
+		"StructureDefinition/argo-endpoint": {
+			"base": "structuredefinition-argo-endpoint.html",
+			"defns": "argo-endpointdefinitions.html"
+		},
+		"CapabilityStatement/client": {
+			"base": "capabilitystatement-client.html"
+		},
+		"CapabilityStatement/server": {
+			"base": "capabilitystatement-server.html"
+		},
+		"StructureDefinition/argo-practitionerrole": {
+			"base": "structuredefinition-argo-practitionerrole.html",
+			"defns": "argo-practitionerroledefinitions.html"
+		},
+		"StructureDefinition/argo-organization": {
+			"base": "structuredefinition-argo-organization.html",
+			"defns": "argo-organizationdefinitions.html"
+		}
 	},
 	"canonicalBase": "http://hl7.org/fhir/us/argo-pd",
 	"dependencyList": [
 		{
-			"source": "resources",
 			"location": "http://ig.fhir.me/Healthedata1/US-Core",
-			"name": "uscore"
+			"name": "uscore",
+			"source": "resources"
 		}
-	]
+	],
+	"sct-edition": "http://snomed.info/sct/731000124108"
 }
