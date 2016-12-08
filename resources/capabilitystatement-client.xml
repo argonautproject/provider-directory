@@ -26,7 +26,7 @@
 		<resource>
 			<type value="Practitioner"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argo-pd/StructureDefinition/argo-practitioner"/>
+				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition/argo-practitioner"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -39,7 +39,7 @@
 				<resource>
 			<type value="Organization"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argo-pd/StructureDefinition/argo-organization"/>
+				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition/argo-organization"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

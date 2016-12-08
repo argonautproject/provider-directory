@@ -983,8 +983,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s80" ss:HRef="http://hl7.org/fhir/us/argo-pd/StructureDefinition/"><Data
-      ss:Type="String">http://hl7.org/fhir/us/argo-pd/StructureDefinition/</Data></Cell>
+    <Cell ss:StyleID="s80" ss:HRef="http://fhir.org/guides/argo-pd/StructureDefinition/"><Data
+      ss:Type="String">http://fhir.org/guides/argo-pd/StructureDefinition/</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s81"><Data ss:Type="String">introduction</Data></Cell>
@@ -1253,7 +1253,7 @@
     <Cell ss:StyleID="s106"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Organization){http://hl7.org/fhir/us/argo-pd/StructureDefinition/argo-organization}</Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Organization){http://fhir.org/guides/argo-pd/StructureDefinition/argo-organization}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>

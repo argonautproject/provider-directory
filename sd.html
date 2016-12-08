@@ -5,8 +5,9 @@
 
   {% include header.html %}
 
-<!--FHIR\Argo-PD\sd.html-->
-<!-- ============BreadCrumb=============== -->
+<!-- Argonaut -->
+
+<!-- ============BreadCrumbs=============== -->
 
 {% include container-start.html %}
 
@@ -31,15 +32,14 @@
 {% capture my-include %}{% include {{[id]}}-intro.md %}{% endcapture %}{{ my-include | markdownify }}
 
 
-<!-- example here -->
+<!-- example here   moved to intro.md sections since the list doesn't render correctly and doesnt build if an example is absent.
 <a name="example"> </a>
-<!--
-<h5>Example: <a href="daf-{{page.code}}-{{page.example}}.html">{{page.tcode}} Example: {{page.example}}</a></h5>
--->
-<!--  try build generated templates
-<h5>Example: <a href="{{[title]}}.example.html">{{[title]}} Example</a></h5> -->
-<p> example here </p>
 
+<h5>{{[title]}} Examples:</h5>
+this is some liquid syntax to access the example list for each structuredefinition  - need to specify in ig.xml exampleFor
+ include list-{{ site.data.structuredefinitions.{{[id]}}.type | slugify }}.xhtml
+
+-->
 
 <a name="profile"> </a>
 <h4><span class="sectioncount">D.4.1.1</span>
@@ -51,7 +51,7 @@ Formal Views of Profile Content
 
 <!-- uri -->
 <p>
-<a href="{{site.data.fhir.path}}profiling.html#representation">Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work</a>.
+<a href="{{site.data.fhir.path}}/profiling.html">Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work</a>.
 </p>
 
 <div id="tabs">
@@ -152,7 +152,7 @@ Formal Views of Profile Content
 
 
 <a name="downloads"> </a>
-<p>Downloads: StructureDefinition: (<a href="{{[type]}}-{{[id]}}.xml" download>XML</a>, <a href="{{[type]}}-{{[id]}}.json" download>JSON</a>), Schema:  <a href="{{[type]}}-{{[id]}}.sch" download>XML Schematron</a></p>
+<p>Downloads: StructureDefinition: (<a href="{{[type]}}-{{[id]}}.xml" download>XML</a>, <a href="{{[type]}}-{{[id]}}.json" download>JSON</a>, <a href="{{[id]}}.csv" download>CSV</a>), Schema:  <a href="{{[id]}}.sch" download>XML Schematron</a></p>
 
 <p>&nbsp;</p>
 
@@ -168,7 +168,8 @@ Formal Views of Profile Content
 
 
 
-<!-- remove term and invarients sections
+
+<!--
 
 <a name="tx"> </a>
 <h4><span class="sectioncount">D.4.1.3</span> Terminology Bindings <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#tx"><img src="target.png"/></a></h4>
