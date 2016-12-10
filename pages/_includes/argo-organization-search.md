@@ -89,7 +89,7 @@ SHOULD also support the search parameters:
 [GET https://fhir-open-api-dstu2.smarthealthit.org/Organization?address-postalcode=48104](https://fhir-open-api-dstu2.smarthealthit.org/Organization?address-postalcode=48104)
 
 
-  [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference
-  [(how to search by token)]: http://hl7.org/fhir/DSTU2/search.html#token
- [(how to search by date)]: http://hl7.org/fhir/DSTU2/search.html#date
- [(how to search by string)]: http://hl7.org/fhir/DSTU2/search.html#string
+  [(how to search by reference)]: http://hl7.org/fhir/search.html#reference
+  [(how to search by token)]: http://hl7.org/fhir/search.html#token
+ [(how to search by date)]: http://hl7.org/fhir/search.html#date
+ [(how to search by string)]: http://hl7.org/fhir/search.html#string

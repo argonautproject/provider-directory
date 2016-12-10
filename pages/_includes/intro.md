@@ -48,11 +48,9 @@ Additional implementation guidance on the use cases and core data elements will 
 
 
 
-#### [Argonaut Provider Directory Connectathon]
+#### Argonaut Provider Directory Connectathon
 
 ------------------------------------------------------------------------
 
   [IHE Healthcare Provider Directory]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf
   [ONC Provider Directory Workshop]: https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents
-
-  [Argonaut Provider Directory Connectathon]: 2016_11_Argonaut_Provider_Directory_Connectathon_2 "wikilink"

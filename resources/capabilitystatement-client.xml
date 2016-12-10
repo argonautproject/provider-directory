@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/valueset.xsd">
 	<id value="client"/>
+	<url value="http://fhir.org/guides/argo-pd/CapabilityStatement/client"/>
 	<name value="Argonaut Provider Directory Client"/>
 	<status value="draft"/>
 	<date value="2016-11-13"/>
@@ -26,7 +27,7 @@
 		<resource>
 			<type value="Practitioner"/>
 			<profile>
-				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition/argo-practitioner"/>
+				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition-argo-practitioner"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -36,10 +37,10 @@
 				<documentation value="Allows discovery of existing Argonaut Provider Director Providers using search criteria defined for the [Argonaut Provider Directory Use Cases](index.html#usecases) "/>
 			</interaction>
 		</resource>
-				<resource>
+		<resource>
 			<type value="Organization"/>
 			<profile>
-				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition/argo-organization"/>
+				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition-argo-organization"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
