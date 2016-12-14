@@ -1,11 +1,11 @@
 
-#  STU3 Argo-PD Resources
+#  Welcome to the Argonaut-Provider Directory Implemenation Guide Repository
+
+Authors:  Eric Haas, Brett Marquard
+
 
 -----
-This is the repository for STU3 Argo-PD Resources
-
-### NOTE the CI build is currently not working (11/8/2016) a recent build is available [here](http://healthedatainc.com/go-ftp/Argo-PD/)
-
+STU3 FHIR Implementation Guide
 
 
 GitHub will automatically trigger a new build whenever you commit changes.
