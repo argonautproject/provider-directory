@@ -14,14 +14,13 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 *Note: a build takes 2-3 minutes to complete. Then you can...*
 
-### Find your rendered IG automatically available at
-
 (If the CI Build is unavailable a recent version of the build is available here : http://healthedatainc.com/go-ftp/Argo-PD/)
 
-http://ig.fhir.me/Healthedata1/Argo-PD
+
+### Find your rendered IG automatically available at
+
+http://build.fhir.org/:org/:repo
 
 ### Find debugging info about the build
 
-http://ig.fhir.me/Healthedata1/Argo-PD/debug.tgz
-
-------
+http://build.fhir.org/:org/:repo/debug.tgz
