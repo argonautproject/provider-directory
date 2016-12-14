@@ -1029,8 +1029,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s73"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s79" ss:HRef="http://fhir.org/guides/argo-pd/StructureDefinition/"><Data
-      ss:Type="String">http://fhir.org/guides/argo-pd/StructureDefinition/</Data></Cell>
+    <Cell ss:StyleID="s79" ss:HRef="http://fhir.org/guides/argonaut-pd/StructureDefinition/"><Data
+      ss:Type="String">http://fhir.org/guides/argonaut-pd/StructureDefinition/</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s80"><Data ss:Type="String">introduction</Data></Cell>
@@ -1597,7 +1597,7 @@
     <Cell ss:StyleID="s103"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Endpoint){http://fhir.org/guides/argo-pd/StructureDefinition-argo-endpoint}</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Endpoint){http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-endpoint}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>

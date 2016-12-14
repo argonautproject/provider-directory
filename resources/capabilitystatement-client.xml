@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/valueset.xsd">
 	<id value="client"/>
-	<url value="http://fhir.org/guides/argo-pd/CapabilityStatement/client"/>
+	<url value="http://fhir.org/guides/argonaut-pd/CapabilityStatement/client"/>
 	<name value="Argonaut Provider Directory Client"/>
 	<status value="draft"/>
 	<date value="2016-11-13"/>
@@ -20,14 +20,16 @@
 	<format value="json"/>
 	<rest>
 		<mode value="client"/>
-		<documentation value="The Argonaut Provider Directory Client SHOULD support querying of one or more FHIR resources using appropriate Argonaut Provider Directory profile(s), RESTful operations defined for the profile and Search parameters identified for the profile."/>
+		<documentation value="'''The Argonaut Provider Directory Client''' ''SHOULD'' support querying of one or more FHIR resources using appropriate Argonaut Provider Directory profile(s), RESTful operations defined for the profile and [[parameters.html|Search]] identified for the profile.
+- list
+- list"/>
 		<security>
 			<description value="Argonaut Provider Directory Clients SHALL implement applicable security requirements documented in the Argonaut Provider Directory IG."/>
 		</security>
 		<resource>
 			<type value="Practitioner"/>
 			<profile>
-				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition-argo-practitioner"/>
+				<reference value="http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-practitioner"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -40,7 +42,7 @@
 		<resource>
 			<type value="Organization"/>
 			<profile>
-				<reference value="http://fhir.org/guides/argo-pd/StructureDefinition-argo-organization"/>
+				<reference value="http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-organization"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

@@ -1014,8 +1014,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s80" ss:HRef="http://fhir.org/guides/argo-pd/StructureDefinition/"><Data
-      ss:Type="String">http://fhir.org/guides/argo-pd/StructureDefinition/</Data></Cell>
+    <Cell ss:StyleID="s80" ss:HRef="http://fhir.org/guides/argonaut-pd/StructureDefinition/"><Data
+      ss:Type="String">http://fhir.org/guides/argonaut-pd/StructureDefinition/</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s81"><Data ss:Type="String">introduction</Data></Cell>
@@ -1214,7 +1214,7 @@
     <Cell ss:StyleID="s106"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Practitioner){http://fhir.org/guides/argo-pd/StructureDefinition-argo-practitioner}</Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Practitioner){http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-practitioner}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1242,7 +1242,7 @@
     <Cell ss:StyleID="s106"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Organization){http://fhir.org/guides/argo-pd/StructureDefinition-argo-organization}</Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Organization){http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-organization}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1328,7 +1328,7 @@
     <Cell ss:StyleID="s106"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Location){http://fhir.org/guides/argo-pd/StructureDefinition-argo-location}</Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Location){http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-location}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1442,7 +1442,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">pd-1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Endpoint){http://fhir.org/guides/argo-pd/StructureDefinition-argo-endpoint}</Data><NamedCell
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Reference(Endpoint){http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-endpoint}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6240,8 +6240,8 @@
     <Cell ss:StyleID="s135"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s135"><Data ss:Type="String">required</Data></Cell>
     <Cell ss:StyleID="s135"/>
-    <Cell ss:StyleID="s157" ss:HRef="http://fhir.org/guides/argo-pd/ValueSet/provider-role"><Data
-      ss:Type="String">http://fhir.org/guides/argo-pd/ValueSet/provider-role</Data></Cell>
+    <Cell ss:StyleID="s157" ss:HRef="http://fhir.org/guides/argonaut-pd/ValueSet/provider-role"><Data
+      ss:Type="String">http://fhir.org/guides/argonaut-pd/ValueSet/provider-role</Data></Cell>
     <Cell ss:StyleID="s135"/>
     <Cell ss:StyleID="s135"/>
     <Cell ss:StyleID="s135"/>
@@ -6257,7 +6257,7 @@
     <Cell ss:StyleID="s138"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="String">required</Data></Cell>
     <Cell ss:StyleID="s138"/>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">http://fhir.org/guides/argo-pd/ValueSet/provider-specialty</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">http://fhir.org/guides/argonaut-pd/ValueSet/provider-specialty</Data></Cell>
     <Cell ss:StyleID="s138"/>
     <Cell ss:StyleID="s138"/>
     <Cell ss:StyleID="s138"/>

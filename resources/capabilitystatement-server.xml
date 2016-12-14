@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/valueset.xsd">
 	<id value="server"/>
-	<url value="http://fhir.org/guides/argo-pd/CapabilityStatement/server"/>
+	<url value="http://fhir.org/guides/argonaut-pd/CapabilityStatement/server"/>
 	<name value="Argonaut Provider Directory Server"/>
 	<status value="draft"/>
 	<date value="2016-11-13"/>
