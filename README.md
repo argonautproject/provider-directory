@@ -16,11 +16,10 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 (If the CI Build is unavailable a recent version of the build is available here : http://healthedatainc.com/go-ftp/Argo-PD/)
 
-
 ### Find your rendered IG automatically available at
 
-http://build.fhir.org/:org/:repo
+http://build.fhir.org/ig/Healthedata1/daf-research
 
 ### Find debugging info about the build
 
-http://build.fhir.org/:org/:repo/debug.tgz
+http://build.fhir.org/ig/Healthedata1/daf-research/debug.tgz
