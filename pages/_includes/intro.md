@@ -1,7 +1,7 @@
 ## Provider Directory
 
 
-The Argonaut project Provider Directory guide is based upon the core [FHIR STU3 API](http://fhir.build.org) and contains the foundation for a robust provider directory.  It describes the use cases and search expectations for finding a practitioner or organization. It outlines the key data elements for any provider directory and basic query guidance.  
+The Argonaut project Provider Directory guide is based upon the core [FHIR STU3 API](http://build.fhir.org) and contains the foundation for a robust provider directory.  It describes the use cases and search expectations for finding a practitioner or organization. It outlines the key data elements for any provider directory and basic query guidance.  
 
 The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory] and the [ONC Provider Directory Workshop].
 
