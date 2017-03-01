@@ -13,7 +13,7 @@
 	</contact>
 	<date value="2016-08-10"/>
 	<description value="Provider speciality roles codes which are composed of the NUCC Health Care Provider Taxonomy Code Set for providers"/>
-	<copyright value="TODO: Permission to Use and Distribute the Health Care Provider Taxonomy Code Set"/>
+	<copyright value="This value set includes content from NUCC Health Care Provider Taxonomy Code Set for providers which is copyright © 2016+ American Medical Association.  For commercial use, including sales or licensing, a license must be obtained."/>
 	<compose>
 		<include>
 			<system value="http://nucc.org/provider-taxonomy"/>
