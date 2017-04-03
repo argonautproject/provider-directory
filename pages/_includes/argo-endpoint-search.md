@@ -1,80 +1,34 @@
 
-
-
-
--------------------------
-
-**Clients**
-
--  A client has connected to a server and fetched a Endpoint by identifier using `GET [base]/Endpoint?identifier=[system]|[code]`
-- A client has connected to a server and fetched a Endpoint by organization using `GET [base]/Endpoint?organization=[id]`
-- A client has connected to a server and fetched a Endpoint by name using 'GET [base]/Endpoint?name=[string]'
-
-**Servers**
-
-- A server is capable of returning a Endpoint by identifier using `GET [base]/Endpoint?identifier=[system]|[code]`
-- A server is capable of returning a Endpoint  by organization using `GET [base]/Endpoint?organization=[id]`
-- A server is capable of returning a Endpoint by name using 'GET [base]/Endpoint?name=[string]'
-
--   A server has ensured that every API request includes a valid Authorization token, supplied via:Authorization: Bearer {server-specific-token-here}
--   A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
-
 -----------
 
-**GET [base]/Endpoint?identifier=[system]|[code]**
+`GET [base]/Endpoint?identifier=[system]|[code]`
 
-*Support:* Mandatory
+**Example:** GET [base]/Endpoint?identifier=http://hospital.smarthealthit.org/EndPoints|103270514
+
+*Support:* Mandatory to search by identifier. 
 
 *Implementation Notes:*  Search based on Endpoint identifier  [(how to search by token)].
 
-*Response Class:*
-
--   (Status 200): successful operation
--   (Status 400): invalid parameter
--   (Status 401/4xx): unauthorized request
-
-
-*Example:*
-
-[GET http://fhir2.healthintersections.com.au/open/Location?identifier=urn:ietf:rfc:3986%7C2.16.840.1.113883.19.5](http://fhir2.healthintersections.com.au/open/Location?identifier=urn:ietf:rfc:3986%7C2.16.840.1.113883.19.5)
-
 -----------
 
-**GET [base]/Endpoint?name=[string]**
+`GET [base]/Endpoint?organization=[id]`
 
-*Support:* Mandatory
+**Example:** GET [base]/Endpoint?organization=2354
 
-*Implementation Notes:* Search based on text name [(how to search by string)].
-*Response Class:*
-
--   (Status 200): successful operation
--   (Status 400): invalid parameter
--   (Status 401/4xx): unauthorized request
-
-
-*Example:*
-
-[GET https://fhir-open-api-dstu2.smarthealthit.org/Location?name=Health](https://fhir-open-api-dstu2.smarthealthit.org/Location?name=Health)
-
------------
-
-
-**GET [base]/Endpoint?organization=[id]**
-
-*Support:* Mandatory
+*Support:* Mandatory to suppport search by organization.
 
 *Implementation Notes:* Search based on organization  [(how to search by reference)].
 
-*Response Class:*
+-----------
 
--   (Status 200): successful operation
--   (Status 400): invalid parameter
--   (Status 401/4xx): unauthorized request
+`GET [base]/Endpoint?name=[string]`
 
+**Example:** GET [base]/Endpoint?name=good health hospital
 
-*Example:*
+*Support:* Mandatory to suppport search by EndPoint name.
 
-TBD
+*Implementation Notes:* Search based on name [(how to search by string)].
+
 
 
   [(how to search by reference)]: http://hl7.org/fhir/search.html#reference
