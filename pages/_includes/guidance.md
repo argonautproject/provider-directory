@@ -18,7 +18,7 @@ source pages/\_include/{{page.md_filename}}.md  file
 
 ### Background on the PD Resource Relationships
 
-#### Relationships between b Practitioner, Organization, Location, and Endpoints
+#### Relationships between Practitioner, Organization, Location, and Endpoints
 {:.no_toc}
 
 This IG describes the basic resources and required elements to form a robust Provider Directory. During the developmen of the guide, the team discusses the relationps between resoruces and draft a few diagrams. First, figure 1 is a basic diagram of single provider practice.
