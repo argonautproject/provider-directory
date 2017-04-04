@@ -1,13 +1,6 @@
-﻿## Definitions, Interpretations and Requirements common to all US-Meds actors
+## {{ page.title }}
 {:.no_toc}
 
-This section outlines the definitions and interpretations and specific guidance for the Argonaut Provider Directory Guide.  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html). 
-
-
-source pages/\_include/{{page.md_filename}}.md  file
-
-
----
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -15,6 +8,11 @@ source pages/\_include/{{page.md_filename}}.md  file
 {:toc}
 
 <!-- end TOC -->
+
+This section outlines the definitions and interpretations and specific guidance for the Argonaut Provider Directory Guide.  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html).
+
+
+source pages/\_include/{{page.md_filename}}.md  file
 
 ### Background on the PD Resource Relationships
 
@@ -37,4 +35,3 @@ Increasing in complexity, is Figure 3, which is a group of providers practicing 
 
 ### Facility Structure
 Todo
-

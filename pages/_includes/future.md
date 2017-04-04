@@ -1,4 +1,5 @@
-﻿## Future Work
+
+## {{ page.title }}
 -----------
 
 ####  Additional Development for a Robust Provider Directory
@@ -11,10 +12,10 @@ The Argonaut Provider Directory Implementation Guide uses NUCC for classificatio
 
 -   Specialty Classification - NUCC isn't hierarchal and doesn't support the query 'return all cardiologists' without the creation of new value sets.
 -   Missing Roles - There are several NUCC entries that don't include a generic 'Role' Classification. For example, 'Radiology' doesn't have a code.
--   Missing Specialties - 'Music Therapist' doesn't include any specialties. When this occurs, this guide recommends populating both Role and Specialty with same code. 
--   Mapping - Many systems don't classify providers by NUCC in their clinical system. The use of NUCC, or another classification terminology, will require mapping for each system. 
+-   Missing Specialties - 'Music Therapist' doesn't include any specialties. When this occurs, this guide recommends populating both Role and Specialty with same code.
+-   Mapping - Many systems don't classify providers by NUCC in their clinical system. The use of NUCC, or another classification terminology, will require mapping for each system.
 
-Additionally, other elements, such as Location.type, would benefit from a more robust value set. When a Provider Directory is balloted, all value sets should be reviewed. 
+Additionally, other elements, such as Location.type, would benefit from a more robust value set. When a Provider Directory is balloted, all value sets should be reviewed.
 
 ####  Affiliate Relationships
 
@@ -22,11 +23,11 @@ A key aspect of Provider Directory is to describe relationships between two dist
 
 Participants in the Argonaut PD development discussed the use of extensions, and profiles on the Basic resource since FHIR STU3 didn't include a logical resource. The development team, in conjunction with HL7 Patient Administration, proposed a new [OrganizationAffiliation Resource](http://wiki.hl7.org/index.php?title=OrganizationAffiliation_FHIR_Resource_Proposal). This Resource needs additional work to be included in a future FHIR build.
 
-####  Formal HL7 Balloting	
+####  Formal HL7 Balloting
 
-The Arognaut Provider Directory work group developed the content of this Implementation Guide thorugh a series of conference calls, listserv discussions, and connectathons. Two virtual connectathons were hosted, and two in conjunction with HL7. 
+The Arognaut Provider Directory work group developed the content of this Implementation Guide thorugh a series of conference calls, listserv discussions, and connectathons. Two virtual connectathons were hosted, and two in conjunction with HL7.
 
-The content in this guide is freely available to anyone. 
+The content in this guide is freely available to anyone.
 
 A formal HL7 ballot provides an additional level of rigor, and a place for regulators to reference, for all industry participants. As part of the ballot additional examples, TestScripts, and conformance assessment of current servers should be considered. A Project Scope Statement is under discussion at HL7 under Project (GET APPROVAL NUMBER).
 
@@ -36,4 +37,4 @@ Healthcare facility and organization structures can be quite complex. In a futur
 
 ####  Identifiers
 
-There is not a unique code system, similar to NPI, for location identifiers. Additional work should be considered to develop a process to cross reference locations and organizations. 
+There is not a unique code system, similar to NPI, for location identifiers. Additional work should be considered to develop a process to cross reference locations and organizations.

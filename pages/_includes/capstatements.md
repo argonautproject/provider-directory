@@ -1,11 +1,7 @@
-﻿## {{ page.title }}
+## {{ page.title }}
 {:.no_toc}
 
 source pages/\_include/{{page.md_filename}}.md  file
-
-This section outlines conformance requirements for each of the Provider Directory actors identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Provider Directory actors.
-
----
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -14,6 +10,7 @@ This section outlines conformance requirements for each of the Provider Director
 
 <!-- end TOC -->
 
+This section outlines conformance requirements for each of the Provider Directory actors identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Provider Directory actors.
 
 ### Conformance requirements for an Argonaut Provider Directory Server
 
@@ -63,7 +60,7 @@ US Provider Directory Servers **SHALL**:
 
 **Summary of Provider Directory search criteria**
 
-Specific server search capabilities are described in detail below in each of the resource sections.  When returning a PractitionerRole, a Practitioner and Endpoint SHALL be included. A server SHALL support the _include parameter when searching on Organization or Location. The client application must handle when all resources are included, and must be able to retrieve when not included. 
+Specific server search capabilities are described in detail below in each of the resource sections.  When returning a PractitionerRole, a Practitioner and Endpoint SHALL be included. A server SHALL support the _include parameter when searching on Organization or Location. The client application must handle when all resources are included, and must be able to retrieve when not included.
 
 | Resource Type | Supported Profiles | Supported Searches | Supported \_includes |
 | ------- | -------- | -------- | -------- |
@@ -150,16 +147,16 @@ A server **SHALL** be capable of returning a PractitionerRole using:
 
 A server **MAY** return a PractitionerRole using:
 
-- `GET [base]/Practitioner?location.address-city=[city]` 
-- `GET [base]/Practitioner?location.address-city=[city]&specialty=[string]` 
+- `GET [base]/Practitioner?location.address-city=[city]`
+- `GET [base]/Practitioner?location.address-city=[city]&specialty=[string]`
 - `GET [base]/Practitioner?location.near=-72.519854,42.373222&near-distance=2m`
 
 Search Parameters:
 
 | Conformance | Parameter | Type |  \_include (see documentation) | Modifiers |
 | ---|---|---|---|--- |
-| **SHALL** | practitioner + identifier | reference + token | 
-| **SHALL** | practitioner + family | reference + token | 
+| **SHALL** | practitioner + identifier | reference + token |
+| **SHALL** | practitioner + family | reference + token |
 | **SHALL** | specialty | token |  |
 {:.grid}
 
