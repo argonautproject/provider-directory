@@ -22,7 +22,7 @@
 
 -----------
 
-`GET [base]/PractitionerRole?specialty=[system]|[code]]`
+`GET [base]/PractitionerRole?specialty=[system]|[code]`
 
 **Example:** GET [base]/PractitionerRole?specialty=http://hl7.org/fhir/practitioner-specialty%7Ccardio
 
