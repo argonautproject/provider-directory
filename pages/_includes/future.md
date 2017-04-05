@@ -38,3 +38,11 @@ Healthcare facility and organization structures can be quite complex. In a futur
 ####  Identifiers
 
 There is not a unique code system, similar to NPI, for location identifiers. Additional work should be considered to develop a process to cross reference locations and organizations.
+
+####  Next Steps
+
+The Argonauts built the Provider Directory through regular calls, virtual and onsite connectathons, and collaboration with HL7. 
+
+The above future items are important and should be considered for further development within existing industry efforts such as the ONC Directory Initiative, Sequoia CareQuality network, and other Vendor networks.  
+
+
