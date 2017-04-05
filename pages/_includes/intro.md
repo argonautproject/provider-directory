@@ -48,10 +48,11 @@ Additional implementation guidance on the use cases and core data elements will 
 -   Pushing updates to central directory
 -   Bulk registry download
 
+## Profiles
+  {%  include list-simple-profiles.xhtml %}
 
-
-#### Argonaut Provider Directory Connectathon
-
+## Value Sets
+  {% include list-simple-valuesets.xhtml %}
 ------------------------------------------------------------------------
 
   [IHE Healthcare Provider Directory]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf
