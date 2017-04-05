@@ -12,7 +12,7 @@ source pages/\_include/{{page.md_filename}}.md  file
 
 This section outlines conformance requirements for each of the Provider Directory actors identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Provider Directory actors.
 
-### Conformance requirements for an Argonaut Provider Directory Server
+### Conformance requirements for an Argonaut Provider Directory Server {#server}
 
 Source Resource: [XML](CapabilityStatement-server.xml.html)/[JSON](CapabilityStatement-server.json.html)
 
@@ -175,15 +175,15 @@ This section describes the expected capabilities of a client actor which is resp
 
 #### Behavior
 
-The US Meds Clent **SHALL** support fetching and querying of one or more US Meds profile(s), using the supported RESTful interactions and search parameters declared in the [US Meds Server CapabilityStatement](#conformance-requirements-for-the-us-meds-server)
+The Argonaut Provider Client **SHALL** support fetching and querying of one or more Argonaut Provider profile(s), using the supported RESTful interactions and search parameters declared in the [Argonaut Provider Directory Server CapabilityStatement](#server)
 
-The US Meds Clent **SHOULD** Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.
+The Argonaut Provider Client **SHOULD** Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.
 
 #### Security
 
 US Core Servers **SHALL** implement the security requirements documented in the [US-Core IG](todo.html).
 
-**Summary of US Meds search criteria**
+**Summary of Argonaut Provider search criteria**
 
 Specific client search capabilities are described in detail below in each of the resource sections.  The MedicationAdministration, MedicationDispense, MedicationStatement and MedicationRequest resources can represent a medication using either a code or refer to the Medication resource.  When referencing a Medication resource, the resource may be contained or an external resource. The server application can choose any one way or more than one method, but *if* the an external reference to Medication is used, the server **SHALL** support the [`_include`](todo.html) parameter for searching this element. The client application **SHALL** support all above methods without causing the application to fail.
 

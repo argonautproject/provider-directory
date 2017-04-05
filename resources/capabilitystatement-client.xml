@@ -5,11 +5,11 @@
 	<name value="Argonaut Provider Directory Client"/>
 	<status value="draft"/>
 	<date value="2016-11-13"/>
-	<publisher value="FHIR Project Team"/>
+	<publisher value="Argonaut Project"/>
 	<contact>
 		<telecom>
 			<system value="other"/>
-			<value value="http://hl7.org/fhir"/>
+			<value value="http://argonautwiki.hl7.org/"/>
 		</telecom>
 	</contact>
 	<description value="This profile defines the expected capabilities of a client when conforming to the Argonaut Provider Directory Implementation Guide."/>
@@ -29,7 +29,7 @@
 		<resource>
 			<type value="Practitioner"/>
 			<profile>
-				<reference value="http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-practitioner"/>
+				<reference value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-practitioner"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -42,7 +42,7 @@
 		<resource>
 			<type value="Organization"/>
 			<profile>
-				<reference value="http://fhir.org/guides/argonaut-pd/StructureDefinition-argo-organization"/>
+				<reference value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-organization"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

@@ -4,14 +4,14 @@
 	<url value="http://fhir.org/guides/argonaut-pd/ValueSet/provider-role"/>
 	<name value="Argonaut Provider Directory Provider Role (NUCC)"/>
 	<status value="draft"/>
-	<publisher value="FHIR Project Team"/>
+	<date value="2016-08-10"/>
+	<publisher value="Argonaut Project"/>
 	<contact>
 		<telecom>
 			<system value="other"/>
-			<value value="http://hl7.org/fhir"/>
+			<value value="http://argonautwiki.hl7.org/"/>
 		</telecom>
 	</contact>
-	<date value="2016-08-10"/>
 	<description value="Provider roles codes which are composed of the NUCC Health Care Provider Taxonomy Code Set for providers"/>
 	<copyright value="This value set includes content from NUCC Health Care Provider Taxonomy Code Set for providers which is copyright © 2016+ American Medical Association.  For commercial use, including sales or licensing, a license must be obtained."/>
 	<compose>
