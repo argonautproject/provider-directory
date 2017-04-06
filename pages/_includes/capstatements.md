@@ -60,15 +60,15 @@ US Provider Directory Servers **SHALL**:
 
 **Summary of Provider Directory search criteria**
 
-Specific server search capabilities are described in detail below in each of the resource sections.  When returning a PractitionerRole, a Practitioner and Endpoint SHALL be included. A server SHALL support the _include parameter when searching on Organization or Location. The client application must handle when all resources are included, and must be able to retrieve when not included.
+Specific server search capabilities are described in detail below in each of the resource sections.  When returning a PractitionerRole, a Practitioner and Endpoint **SHALL** be included. When searching on Organization or Location, a server **SHALL** support the _include parameter for the endpoint parameter. The client application must properly process a bundle when all resources are included, and must be able to retrieve them when not included.
 
-| Resource Type | Supported Profiles | Supported Searches | Supported \_includes |
+| Resource Type | Supported Profiles | Supported Search parameters| Supported \_includes |
 | ------- | -------- | -------- | -------- |
 | [Endpoint](#endpoint) | Argonaut Endpoint Profile | identifier, organization, name ||
 | [Location](#location) | Argonaut Location Profile | identifier, name, address | Location:endpoint |
 | [Organization](#organization) | Argonaut Organization Profile | identifier, name, address | Organization:endpoint |
 | [Practitioner](#practitioner) | Argonaut Practitioner Profile | identifier, name | |
-| [PractitionerRole](#practitionerrole)| Argonaut PractitionerRole Profile | practitioner, specialty ||
+| [PractitionerRole](#practitionerrole)| Argonaut PractitionerRole Profile | practitioner, specialty |PractitionerRole:practitioner, PractitionerRole:endpoint|
 {:.grid}
 
 #### Resource  Details:
@@ -85,9 +85,11 @@ A server **SHALL** be capable of fetching an Endpoint using:
 - `GET [base]/Endpoint?organization=[id]`
 - `GET [base]/Endpoint?name=[string]`
 
-| Conformance | Parameter | Type | \_include (see documentation) | Modifiers |
-| ---|---|---|---|--- |
-| **SHALL** | Organization + identifier | reference | | |
+| Conformance | Parameter | Type | \_include (see documentation) |
+| ---|---|---|---|
+| **SHALL** | identifier| token | |
+| **SHALL** | name| string | |
+| **SHALL** | organization| reference | |
 {:.grid}
 
 ##### 2. Location
@@ -95,17 +97,19 @@ Supported Profiles:  [Argonaut Location Profile](StructureDefinition-argo-locati
 
 Search Criteria:
 
-A server **SHALL** be capable of fetching a Location using:
+A server **SHALL** be capable of returning a Location using:
 
-- `GET [base]/Location?identifier=[system]|[code]`
-- `GET [base]/Location?name=[string]`
-- `GET [base]/Location?address=[string]`
+- `GET [base]/Location?identifier=[system]|[code]{&_include=Location:endpoint}`
+- `GET [base]/Location?name=[string]{&_include=Location:endpoint}`
+- `GET [base]/Location?address=[string]{&_include=Location:endpoint}`
 
 Search Parameters:
 
-| Conformance | Parameter | Type | \_include (see documentation) | Modifiers |
-| ---|---|---|---|--- |
-| **SHALL** | | reference |  Location:endoint | |
+| Conformance | Parameter | Type | \_include (see documentation) |
+| ---|---|---|---|
+| **SHALL** | identifier| token | Location:endpoint|
+| **SHALL** | name| string |Location:endpoint |
+| **SHALL** | organization| reference |Location:endpoint |
 {:.grid}
 
 ##### 3. Organization
@@ -115,13 +119,15 @@ Search Criteria:
 
 A server **SHALL** be capable of returning an Organization using:
 
-- `GET [base]/Organization?identifier=[system]|[code]`
-- `GET [base]/Organization?name=[string]`
-- `GET [base]/Organization?address=[string]`
+- `GET [base]/Organization?identifier=[system]|[code]{&_include=Organization:endpoint}`
+- `GET [base]/Organization?name=[string]{&_include=Organization:endpoint}`
+- `GET [base]/Organization?address=[string]{&_include=Organization:endpoint}`
 
-| Conformance | Parameter | Type | \_include (see documentation) | Modifiers |
-| ---|---|---|---|--- |
-| **SHALL** | | reference |  Organization:endoint | |
+| Conformance | Parameter | Type | \_include (see documentation) |
+| ---|---|---|---|
+| **SHALL** | identifier| token | Organization:endpoint|
+| **SHALL** | name| string |Organization:endpoint |
+| **SHALL** | organization| reference |Organization:endpoint |
 {:.grid}
 
 ##### 4. Practitioner
@@ -134,6 +140,12 @@ A server **SHALL** be capable of returning a Practitioner using:
 - `GET [base]/Practitioner?identifier=[system]|[code]`
 - `GET [base]/Practitioner?family=[string]&given=[string]`
 
+| Conformance | Parameter | Type | \_include (see documentation) |
+| ---|---|---|---|
+| **SHALL** | identifier| token ||
+| **SHALL** | name| string ||
+{:.grid}
+
 ##### 5. PractitionerRole
 Supported Profiles:  [Argonaut PractitionerRole Profile](StructureDefinition-argo-practitionerrole.html)
 
@@ -141,25 +153,26 @@ Search Criteria:
 
 A server **SHALL** be capable of returning a PractitionerRole using:
 
-- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]`
-- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&_include=PractitionerRole:practitioner`
-- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]`
-- `GET [base]/PractitionerRole?specialty=[system]|[code]`
-- `GET [base]/PractitionerRole?specialty=[system]|[code]&_include=PractitionerRole:practitioner`
+- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?specialty=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
 
 A server **MAY** return a PractitionerRole using:
 
-- `GET [base]/Practitioner?location.address-city=[city]`
-- `GET [base]/Practitioner?location.address-city=[city]&specialty=[string]`
-- `GET [base]/Practitioner?location.near=-72.519854,42.373222&near-distance=2m`
+- `GET [base]/PractitionerRole?location.address-city=[city]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?location.address-city=[city]&specialty=[string]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?location.near=[lat],[long]&near-distance=[distance]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
 
 Search Parameters:
 
-| Conformance | Parameter | Type |  \_include (see documentation) | Modifiers |
-| ---|---|---|---|--- |
-| **SHALL** | practitioner + identifier | reference + token |
-| **SHALL** | practitioner + family | reference + token |
-| **SHALL** | specialty | token |  |
+| Conformance | Parameter | Type |  \_include (see documentation) |
+| ---|---|---|---|
+| **SHALL** | practitioner.identifier | reference + token (chained parameter)|PractitionerRole:practitioner, PractitionerRole:endpoint|
+| **SHALL** | practitioner.family | reference + string (chained parameter) |PractitionerRole:practitioner, PractitionerRole:endpoint|
+| **SHALL** | specialty | token |PractitionerRole:practitioner, PractitionerRole:endpoint|
+| **MAY** | location + address | reference + string (chained parameter) |PractitionerRole:practitioner, PractitionerRole:endpoint|
+| **MAY** | location + address, specialty | reference + string (chained parameter), token |PractitionerRole:practitioner, PractitionerRole:endpoint|
+| **MAY** | location + near, location + distance | reference + token (chained parameter), reference + quantity (chained parameter)  |PractitionerRole:practitioner, PractitionerRole:endpoint|
 {:.grid}
 
 <br />
@@ -210,10 +223,9 @@ Search Criteria:
 
 A client **SHALL** be capable of fetching a Location using:
 
-- `GET [base]/Location?identifier=[system]|[code]`
-- `GET [base]/Location?name=[string]`
-- `GET [base]/Location?address=[string]`
-
+- `GET [base]/Location?identifier=[system]|[code]{&_include=Location:endpoint}`
+- `GET [base]/Location?name=[string]{&_include=Location:endpoint}`
+- `GET [base]/Location?address=[string]{&_include=Location:endpoint}`
 
 ##### 3. Organization
 Supported Profiles:  [Argonaut Organization Profile](StructureDefinition-argo-organization.html)
@@ -222,9 +234,9 @@ Search Criteria:
 
 A client **SHALL** be capable of fetching an Organization using:
 
-- `GET [base]/Organization?identifier=[system]|[code]`
-- `GET [base]/Organization?name=[string]`
-- `GET [base]/Organization?address=[string]`
+- `GET [base]/Organization?identifier=[system]|[code]{&_include=Organization:endpoint}`
+- `GET [base]/Organization?name=[string]{&_include=Organization:endpoint}`
+- `GET [base]/Organization?address=[string]{&_include=Organization:endpoint}`
 
 ##### 4. Practitioner
 Supported Profiles:  [Argonaut Practitioner Profile](StructureDefinition-argo-practitioner.html)
@@ -243,10 +255,8 @@ Search Criteria:
 
 A client **SHALL** be capable of fetching a PractitionerRole using:
 
-- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]`
-- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&_include=PractitionerRole:practitioner`
-- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]`
-- `GET [base]/PractitionerRole?specialty=[system]|[code]`
-- `GET [base]/PractitionerRole?specialty=[system]|[code]&_include=PractitionerRole:practitioner`
+- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?specialty=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
 
 <br />
