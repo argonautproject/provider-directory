@@ -185,9 +185,8 @@
                 </text>
                 <status value="active"/>
                 <connectionType>
-                    <system value="http://hl7.org/fhir/endpoint-connection-type"/>
-                    <code value="DIRECT"/>
-                    <display value="DIRECT SMTP"/>
+                    <system value="http://hl7.org/fhir/endpoint-connection-type" />
+                    <code value="direct-project"/>
                 </connectionType>
                 <name value="Brenda.Jennings.Richard.MD@direct.argonaut.org"/>
                 <managingOrganization>
@@ -195,7 +194,7 @@
                 </managingOrganization>
                 <payloadType>
                     <coding>
-                        <system value="http://hl7.org/fhir/ValueSet/endpoint-payload-type"/>
+                        <system value="http://hl7.org/fhir/endpoint-payload-type"/>
                         <code value="urn:hl7-org:sdwg:ccda-structuredBody:1.1"/>
                     </coding>
                 </payloadType>

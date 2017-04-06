@@ -26,8 +26,8 @@
             </text>
             <status value="active"/>
             <connectionType>
-                <!--  system value="http://hl7.org/fhir/ValueSet/http-verb" /> -->
-                <code value="email"/>
+                <system value="http://hl7.org/fhir/endpoint-connection-type" />
+                <code value="direct-project"/>
             </connectionType>
             <name value="Dr. Ronald Bone Direct Address"/>
             <managingOrganization>
@@ -35,7 +35,7 @@
             </managingOrganization>
             <payloadType>
                 <coding>
-                    <system value="http://hl7.org/fhir/ValueSet/endpoint-payload-type"/>
+                    <system value="http://hl7.org/fhir/endpoint-payload-type"/>
                     <code value="urn:hl7-org:sdwg:ccda-structuredBody:1.1"/>
                 </coding>
             </payloadType>
