@@ -1,0 +1,31 @@
+<Endpoint xmlns="http://hl7.org/fhir">
+    <id value="71"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2016-07-24T23:12:16Z"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Dr. Ronald Bone Direct Address
+            <br/> Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir
+        </div>
+    </text>
+    <status value="active"/>
+    <connectionType>
+        <!--  system value="http://hl7.org/fhir/ValueSet/http-verb" /> -->
+        <code value="email"/>
+    </connectionType>
+    <name value="Dr. Ronald Bone Direct Address"/>
+    <managingOrganization>
+        <reference value="Organization/hl7"/>
+    </managingOrganization>
+    <payloadType>
+        <coding>
+            <system value="http://hl7.org/fhir/ValueSet/endpoint-payload-type"/>
+            <code value="urn:hl7-org:sdwg:ccda-structuredBody:1.1"/>
+        </coding>
+    </payloadType>
+    <payloadMimeType value="text/xml">
+    </payloadMimeType>
+    <address value="mailto:Interoperability@DirectAddress.com"/>
+</Endpoint>

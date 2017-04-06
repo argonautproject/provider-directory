@@ -1,0 +1,32 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+       <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2016-03-28T06:17:56Z"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>Dr Ronald Heart is a cardiologist at Acme Hospital</p> 
+        </div>
+    </text>
+    <identifier>
+        <system value="http://hl7.org.fhir/sid/us-npi"/>
+        <value value="9941339108"/>
+    </identifier>
+    <identifier>
+        <system value="http://www.acme.org/practitioners"/>
+        <value value="25456"/>
+    </identifier>
+    <name>
+        <family value="Heart"/>
+        <given value="Ronald"/>
+        <prefix value="Dr"/>
+    </name>
+    <address>
+           <use value="home"/>
+          <line value="1002 Healthcare Drive"/>
+            <city value="Amherst"/>
+            <state value="MA"/>
+            <postalCode value="01002"/>
+    </address>
+</Practitioner>
