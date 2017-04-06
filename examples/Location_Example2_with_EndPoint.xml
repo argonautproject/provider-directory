@@ -1,5 +1,5 @@
 <Location xmlns="http://hl7.org/fhir">
-    <id value="hl7east"/>
+    <id value="hl7east-2"/>
     <!--   HL7 East   -->
     <contained>
         <Endpoint xmlns="http://hl7.org/fhir">
@@ -28,7 +28,7 @@
             <payloadMimeType value="text/xml">
             </payloadMimeType>
             <address value="mailto:Interoperability@DirectAddress.com"/>
-        </Endpoint>        
+        </Endpoint>
     </contained>
     <identifier>
         <system value="http://www.acme.org/location"/>
@@ -63,7 +63,7 @@
     <state value="MA"/>
     <postalCode value="01002"/>
     <country value="USA"/>
-  </address>  
+  </address>
     <physicalType>
         <coding>
             <system value="http://hl7.org/fhir/location-physical-type"/>

@@ -1,3 +1,4 @@
+
 ﻿## {{ page.title }}
 {:.no_toc}
 
@@ -164,7 +165,7 @@ Search Parameters:
 
 <br />
 
-### Conformance requirements for the Argonaut Provider Directory Client 
+### Conformance requirements for the Argonaut Provider Directory Client
 
 Source Resource: [XML](CapabilityStatement-client.xml.html)/[JSON](CapabilityStatement-client.json.html)
 
@@ -173,7 +174,7 @@ Source Resource: [XML](CapabilityStatement-client.xml.html)/[JSON](CapabilitySta
 - Published: 2017-04-30
 - Published by: Argonaut
 
-This section describes the expected capabilities of a client actor which is responsible for creating and initiating the queries for information. It is expected that this CapabilityStatement will be used in conjuction with the [Argonaut Provider Directory Server CapabilityStatement](capstatements.html#server). Together they describe the basic expectations for the capabilities of a conformant client application. 
+This section describes the expected capabilities of a client actor which is responsible for creating and initiating the queries for information. It is expected that this CapabilityStatement will be used in conjuction with the [Argonaut Provider Directory Server CapabilityStatement](capstatements.html#server). Together they describe the basic expectations for the capabilities of a conformant client application.
 
 #### Behavior
 
