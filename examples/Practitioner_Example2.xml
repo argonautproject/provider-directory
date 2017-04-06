@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="fhir-all-xsd/practitioner.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<Practitioner xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://hl7.org/fhir fhir-all-xsd/practitioner.xsd"
-    xmlns="http://hl7.org/fhir">
+<Practitioner xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
     <id value="example-2"/>
     <meta>
         <versionId value="1"/>
@@ -34,34 +31,4 @@
             <state value="MA"/>
             <postalCode value="01002"/>
     </address>
-    <role>
-        <organization>
-            <reference value="Organization/example-organization-1"/>
-        </organization>
-        <code>
-            <coding>
-                <system value="http://nucc.org/provider-taxonomy"/>
-                <code value="207R00000X"/>
-                <display value="Internal Medicine"/>
-            </coding>
-        </code>
-        <specialty>
-            <coding>
-                <system value="http://nucc.org/provider-taxonomy"/>
-                <code value="207RS0010X"/>
-                <display value="Sports Medicine"/>
-            </coding>
-        </specialty>
-        <telecom>
-            <system value="phone"/>
-            <value value="15555662543"/>
-            <use value="work"/>
-        </telecom>
-        <location>
-            <reference value="Location/example-location-1"/>
-        </location>
-        <endpoint>
-            <reference value="Endpoint/example-endpoint-1"/>
-        </endpoint>
-    </role>
 </Practitioner>

@@ -4,24 +4,18 @@
     <contained>
         <Endpoint xmlns="http://hl7.org/fhir">
             <id value="71"/>
-            <text>
-                <status value="generated"/>
-                <div xmlns="http://www.w3.org/1999/xhtml">Dr. Ronald Bone Direct Address
-                    <br/> Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir
-                </div>
-            </text>
             <status value="active"/>
             <connectionType>
-                <!--  system value="http://hl7.org/fhir/ValueSet/http-verb" /> -->
-                <code value="email"/>
+                <system value="http://hl7.org/fhir/endpoint-connection-type" />
+                <code value="direct-project"/>
             </connectionType>
             <name value="Dr. Ronald Bone Direct Address"/>
             <managingOrganization>
-                <reference value="Organization/hl7"/>
+                <reference value="Organization/example-organization-1"/>
             </managingOrganization>
             <payloadType>
                 <coding>
-                    <system value="http://hl7.org/fhir/ValueSet/endpoint-payload-type"/>
+                    <system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
                     <code value="urn:hl7-org:sdwg:ccda-structuredBody:1.1"/>
                 </coding>
             </payloadType>
@@ -79,6 +73,6 @@
         <reference value="Organization/example-organization-1"/>
     </managingOrganization>
     <endpoint>
-        <reference value="#endpoint-1001"/>
+        <reference value="#71"/>
     </endpoint>
 </Location>
