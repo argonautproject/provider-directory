@@ -187,7 +187,7 @@ Argonaut Clent **SHALL** implement the security requirements documented in the [
 
 **Summary of Argonaut Provider search criteria**
 
-Specific client search capabilities are described in detail below in each of the resource sections. When a Server returns a PractitionerRole, Location, or Organization, an Endpoint MAY be included. The client application must handle when all resources are included, and must be able to retrieve when not included.
+Specific client search capabilities are described in detail below in each of the resource sections. When a Server returns a PractitionerRole, Location, or Organization, an Endpoint **MAY** be included. The client application **SHALL** properly process a bundle when all resources are included, and be able to retrieve the Endpoint resource when not included.
 
 #### Resource  Details:
 
