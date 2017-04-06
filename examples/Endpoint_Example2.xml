@@ -1,31 +1,30 @@
 <Endpoint xmlns="http://hl7.org/fhir">
-    <id value="example-endpoint-1"/>
+    <id value="example-endpoint-2"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2016-07-24T23:12:16Z"/>
     </meta>
     <text>
         <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">Dr. Ronald Bone Direct Address
-            <br/> Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir
-        </div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Westwood Physicians Organization ADT
+             </div>
     </text>
     <status value="active"/>
     <connectionType>
         <system value="http://hl7.org/fhir/endpoint-connection-type" />
-        <code value="direct-project"/>
+        <code value="hl7v2-mllp"/>
     </connectionType>
-    <name value="Dr. Ronald Bone Direct Address"/>
+    <name value="Westwood Physicians Organization ADT"/>
     <managingOrganization>
         <reference value="Organization/example-organization-1"/>
     </managingOrganization>
     <payloadType>
         <coding>
-            <system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
-            <code value="urn:hl7-org:sdwg:ccda-structuredBody:1.1"/>
+            <system value="http://example.org"/>
+            <code value="HL7_ADT"/>
         </coding>
     </payloadType>
-    <payloadMimeType value="text/xml">
+    <payloadMimeType value="text">
     </payloadMimeType>
-    <address value="mailto:Interoperability@DirectAddress.com"/>
+    <address value="http://exampl.org/open/ADT"/>
 </Endpoint>
