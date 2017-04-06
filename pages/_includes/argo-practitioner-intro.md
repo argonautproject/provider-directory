@@ -16,3 +16,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 * none
 
 [Practitioner]: http://build.fhir.org/practitioner.html
+
+##### Examples
+
+- [Practitioner-1](Practitioner-example-practitioner-1.html)
+- [Practitioner-2](Practitioner-example-practitioner-2.html)

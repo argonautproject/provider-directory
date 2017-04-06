@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Practitioner xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://hl7.org/fhir">
-    <id value="example-2"/>
+    <id value="example-practitioner-2"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2016-03-28T06:17:56Z"/>

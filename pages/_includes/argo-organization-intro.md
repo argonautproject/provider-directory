@@ -20,3 +20,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 
 [Organization]: http://build.fhir.org/organization.html
+
+##### Examples
+
+- [Organization-1](Organization-example-organization-1.html)
+- [Organization-2-with-Endpoint](Organization-example-organization-2.html)

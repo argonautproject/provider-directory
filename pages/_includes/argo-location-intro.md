@@ -25,3 +25,10 @@ Each Location *SHOULD* have:
  * A server *SHALL* support the [_include](http://build.fhir.org/search.html#include) parameter when retrieving a Location resource.
 
 [Location]:  http://build.fhir.org/location.html
+
+##### Examples
+
+- [Location-1](Location-example-location-1.html)
+- [Location-2-with-Endpoint](Location-example-location-2.html)
+- [Location-3-minimum](Location-example-location-3.html)
+

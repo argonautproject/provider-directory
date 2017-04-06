@@ -17,7 +17,7 @@
         <resource>
             <example value="true"/>
             <sourceReference>
-                <reference value="Practitioner/example-2"/>
+                <reference value="Practitioner/example-practitioner-2"/>
             </sourceReference>
         </resource>
         <resource>

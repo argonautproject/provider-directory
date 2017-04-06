@@ -8,7 +8,7 @@ This profile sets minimum expectations for the [EndPoint](http://build.fhir.org/
 
 The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#summary) below provides the  formal summary, definitions, and  terminology requirements.  
 
-**Each PractitionerRole must have:**
+**Each Endpoint must have:**
 
 1. A status
 1. A name
@@ -19,3 +19,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Profile specific implementation guidance:**
 
 * None
+
+##### Examples
+
+- [Endpoint-1](Endpoint-example-endpoint-1.html)
+- [Endpoint-2](Endpoint-example-endpoint-2.html)

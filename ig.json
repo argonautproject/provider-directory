@@ -67,8 +67,8 @@
             "base": "Location-example-location-1.html",
             "source": "Location_Example1.xml"
         },
-        "Practitioner/example-2": {
-            "base": "Practitioner-example-2.html",
+        "Practitioner/example-practitioner-2": {
+            "base": "Practitioner-example-practitioner-2.html",
             "source": "Practitioner_Example2.xml"
         },
         "Practitioner/example-practitioner-1": {

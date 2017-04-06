@@ -23,3 +23,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 * The Practitioner resource SHALL be included when returning the PractitionerRole resource.
 * The Endpoint resource SHALL be included when returning the PractitionerRole resource.
 * The PractitionerRole.endpoint is where the [Direct address](https://www.healthit.gov/sites/default/files/directbasicsforprovidersqa_05092014.pdf) is included.
+
+
+##### Examples
+
+- [Bundle-PractitionerRole-with-Practitioner-EndPoint](Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2.xml.html)
+
