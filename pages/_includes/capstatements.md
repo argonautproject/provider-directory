@@ -1,5 +1,4 @@
-
-﻿## {{ page.title }}
+## {{ page.title }}
 {:.no_toc}
 
 source pages/\_include/{{page.md_filename}}.md  file

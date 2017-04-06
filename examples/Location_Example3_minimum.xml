@@ -1,5 +1,5 @@
 <Location xmlns="http://hl7.org/fhir">
-    <id value="example-locatin-3"/>
+    <id value="example-location-3"/>
     <!--   HL7 East   -->
     <identifier>
         <system value="http://www.acme.org/location"/>
