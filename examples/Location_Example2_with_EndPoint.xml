@@ -1,5 +1,5 @@
 <Location xmlns="http://hl7.org/fhir">
-    <id value="hl7east-2"/>
+    <id value="example-location-2"/>
     <!--   HL7 East   -->
     <contained>
         <Endpoint xmlns="http://hl7.org/fhir">
@@ -75,6 +75,9 @@
         <longitude value="-72.519854"/>
         <latitude value="42.373222"/>
     </position>
+    <managingOrganization>
+        <reference value="Organization/example-organization-1"/>
+    </managingOrganization>
     <endpoint>
         <reference value="#endpoint-1001"/>
     </endpoint>

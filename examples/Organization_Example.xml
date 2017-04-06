@@ -1,5 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="HB-32535933"/>
+    <id value="example-organization-1"/>
     <meta>
         <versionId value="206118"/>
         <lastUpdated value="2016-03-09T15:35:59.122+00:00"/>

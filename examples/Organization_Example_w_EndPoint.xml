@@ -1,6 +1,6 @@
 <Organization xmlns="http://hl7.org/fhir"
  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <id value="393872"/>
+    <id value="example-organization-2"/>
     <text>
         <status value="generated"/>
         <xhtml:div>

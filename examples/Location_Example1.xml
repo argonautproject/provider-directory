@@ -1,5 +1,5 @@
 <Location xmlns="http://hl7.org/fhir">
-    <id value="hl7east-1"/>
+    <id value="example-location-1"/>
     <!--   HL7 East   -->
     <identifier>
         <system value="http://www.acme.org/location"/>
@@ -47,6 +47,6 @@
         <latitude value="42.373222"/>
     </position>
     <managingOrganization>
-        <reference value="Organization/hl7"/>
+        <reference value="Organization/example-organization-2"/>
     </managingOrganization>
 </Location>

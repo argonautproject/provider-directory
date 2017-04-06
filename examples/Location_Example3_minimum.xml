@@ -1,5 +1,5 @@
 <Location xmlns="http://hl7.org/fhir">
-    <id value="hl7east-3"/>
+    <id value="example-locatin-3"/>
     <!--   HL7 East   -->
     <identifier>
         <system value="http://www.acme.org/location"/>
@@ -24,6 +24,6 @@
         <latitude value="42.373222"/>
     </position>
     <managingOrganization>
-        <reference value="http://fhir3.healthintersections.com.au/open/Organization/1"/>
+        <reference value="Organization/example-organization-2"/>
     </managingOrganization>
 </Location>

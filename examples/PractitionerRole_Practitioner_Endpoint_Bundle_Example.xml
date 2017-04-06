@@ -23,11 +23,11 @@
                     <lastUpdated value="2016-11-15T13:45:31.629-05:00"/>
                 </meta>
                 <practitioner>
-                    <reference value="Practitioner/Practitioner-1011"/>
+                    <reference value="Practitioner/example-practitioner-1"/>
                     <display value="Brenda Jennings Richard MD"/>
                 </practitioner>
                 <organization>
-                    <reference value="Organization/Organization-2016"/>
+                    <reference value="Organization/example-organization-1"/>
                     <display value="Maple Leaf Clinic"/>
                 </organization>
                 <code>
@@ -45,7 +45,7 @@
                     </coding>
                 </specialty>
                 <location>
-                    <reference value="Location/Location-2016"/>
+                    <reference value="Location/example-location-1"/>
                     <display value="Maple Leaf Clinic"/>
                 </location>
                 <endpoint>
@@ -191,7 +191,7 @@
                 </connectionType>
                 <name value="Brenda.Jennings.Richard.MD@direct.argonaut.org"/>
                 <managingOrganization>
-                    <reference value="Organization/hl7"/>
+                    <reference value="Organization/example-organization-1"/>
                 </managingOrganization>
                 <payloadType>
                     <coding>

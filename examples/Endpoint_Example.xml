@@ -1,5 +1,5 @@
 <Endpoint xmlns="http://hl7.org/fhir">
-    <id value="71"/>
+    <id value="example-endpoint-1"/>
     <meta>
         <versionId value="1"/>
         <lastUpdated value="2016-07-24T23:12:16Z"/>
@@ -17,7 +17,7 @@
     </connectionType>
     <name value="Dr. Ronald Bone Direct Address"/>
     <managingOrganization>
-        <reference value="Organization/hl7"/>
+        <reference value="Organization/example-org-1"/>
     </managingOrganization>
     <payloadType>
         <coding>

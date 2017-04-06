@@ -36,7 +36,7 @@
     </address>
     <role>
         <organization>
-            <reference value="http://fhir3.healthintersections.com.au/open/Organization/1"/>
+            <reference value="Organization/example-organization-1"/>
         </organization>
         <code>
             <coding>
@@ -58,10 +58,10 @@
             <use value="work"/>
         </telecom>
         <location>
-            <reference value="http://fhir3.healthintersections.com.au/open/Location/1"/>
+            <reference value="Location/example-location-1"/>
         </location>
         <endpoint>
-            <reference value="http://fhir3.healthintersections.com.au/open/Endpoint/71"/>
+            <reference value="Endpoint/example-endpoint-1"/>
         </endpoint>
     </role>
 </Practitioner>
