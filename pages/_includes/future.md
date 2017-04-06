@@ -8,7 +8,7 @@ Throughout the development of the Argonaut Provider Directory several additional
 
 ####  Provider Specialty, Provider Role, and Other Vocabularies
 
-The Argonaut Provider Directory Implementation Guide uses NUCC for classification of the provider. The [Argonaut Provider Directory Provider Specialty (NUCC)] and [Argonaut Provider Directory Provider Role (NUCC)] value sets are included in this guide. The development team discussed the following limitations of NUCC:
+The Argonaut Provider Directory Implementation Guide uses NUCC for classification of the provider. The [Argonaut Provider Directory Provider Specialty (NUCC)](ValueSet-provider-specialty.html) and [Argonaut Provider Directory Provider Role (NUCC)](ValueSet-provider-role.html) value sets are included in this guide. The development team discussed the following limitations of NUCC:
 
 -   Specialty Classification - NUCC isn't hierarchal and doesn't support the query 'return all cardiologists' without the creation of new value sets.
 -   Missing Roles - There are several NUCC entries that don't include a generic 'Role' Classification. For example, 'Radiology' doesn't have a code.
