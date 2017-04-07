@@ -4,13 +4,6 @@
         <versionId value="206118"/>
         <lastUpdated value="2016-03-09T15:35:59.122+00:00"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">Acme Hospitall <br/> 3300
-            Washtenaw Avenue, Suite 227 <br/> Amherst, MA 01002 <br/> USA <br/> (+1) 734-677-7777
-            (phone) <br/> (+1) 734-677-6622 (fax) <br/> E-mail: <a href="mailto:hq@acme.org">hq@HL7.org</a>
-        </div>
-    </text>
     <identifier>
         <system value="http://hl7.org.fhir/sid/us-npi"/>
         <value value="1144221847"/>
@@ -38,9 +31,9 @@
     </telecom>
     <address>
         <line value="3300 Washtenaw Avenue, Suite 227"/>
-        <city value="Amherst"/> 
+        <city value="Amherst"/>
         <state value="MA"/>
         <postalCode value="01002"/>
-        <country value="USA"/>      
+        <country value="USA"/>
     </address>
 </Organization>

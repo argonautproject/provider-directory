@@ -4,12 +4,6 @@
         <versionId value="1"/>
         <lastUpdated value="2016-07-24T23:12:16Z"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">Dr. Ronald Bone Direct Address
-            <br/> Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir
-        </div>
-    </text>
     <status value="active"/>
     <connectionType>
         <system value="http://hl7.org/fhir/endpoint-connection-type" />

@@ -4,11 +4,6 @@
         <versionId value="1"/>
         <lastUpdated value="2016-07-24T23:12:16Z"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">Westwood Physicians Organization ADT
-             </div>
-    </text>
     <status value="active"/>
     <connectionType>
         <system value="http://hl7.org/fhir/endpoint-connection-type" />
