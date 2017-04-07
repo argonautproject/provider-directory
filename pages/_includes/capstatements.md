@@ -109,7 +109,7 @@ Search Parameters:
 | ---|---|---|---|
 | **SHALL** | identifier| token | Location:endpoint|
 | **SHALL** | name| string |Location:endpoint |
-| **SHALL** | organization| reference |Location:endpoint |
+| **SHALL** | address | string |Location:endpoint |
 {:.grid}
 
 ##### 3. Organization
@@ -127,7 +127,7 @@ A server **SHALL** be capable of returning an Organization using:
 | ---|---|---|---|
 | **SHALL** | identifier| token | Organization:endpoint|
 | **SHALL** | name| string |Organization:endpoint |
-| **SHALL** | organization| reference |Organization:endpoint |
+| **SHALL** | address | string |Organization:endpoint |
 {:.grid}
 
 ##### 4. Practitioner
@@ -139,10 +139,13 @@ A server **SHALL** be capable of returning a Practitioner using:
 
 - `GET [base]/Practitioner?identifier=[system]|[code]`
 - `GET [base]/Practitioner?family=[string]&given=[string]`
+- `GET [base]/Practitioner?name=[string]`
 
 | Conformance | Parameter | Type | \_include (see documentation) |
 | ---|---|---|---|
 | **SHALL** | identifier| token ||
+| **SHALL** | given| string ||
+| **SHALL** | family| string ||
 | **SHALL** | name| string ||
 {:.grid}
 
@@ -170,9 +173,8 @@ Search Parameters:
 | **SHALL** | practitioner.identifier | reference + token (chained parameter)|PractitionerRole:practitioner, PractitionerRole:endpoint|
 | **SHALL** | practitioner.family | reference + string (chained parameter) |PractitionerRole:practitioner, PractitionerRole:endpoint|
 | **SHALL** | specialty | token |PractitionerRole:practitioner, PractitionerRole:endpoint|
-| **MAY** | location + address | reference + string (chained parameter) |PractitionerRole:practitioner, PractitionerRole:endpoint|
-| **MAY** | location + address, specialty | reference + string (chained parameter), token |PractitionerRole:practitioner, PractitionerRole:endpoint|
-| **MAY** | location + near, location + distance | reference + token (chained parameter), reference + quantity (chained parameter)  |PractitionerRole:practitioner, PractitionerRole:endpoint|
+| **MAY** | location.address | reference + string (chained parameter) |PractitionerRole:practitioner, PractitionerRole:endpoint|
+| **MAY** | location.near, location.distance | reference + token (chained parameter), reference + quantity (chained parameter)  |PractitionerRole:practitioner, PractitionerRole:endpoint|
 {:.grid}
 
 <br />
@@ -247,6 +249,7 @@ A client **SHALL** be capable of fetching a Practitioner using:
 
 - `GET [base]/Practitioner?identifier=[system]|[code]`
 - `GET [base]/Practitioner?family=[string]&given=[string]`
+- `GET [base]/Practitioner?name=[string]`
 
 ##### 5. PractitionerRole
 Supported Profiles:  [Argonaut PractitionerRole Profile](StructureDefinition-argo-practitionerrole.html)

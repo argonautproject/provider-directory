@@ -1,0 +1,459 @@
+<p>This section outlines conformance requirements for each of the Provider Directory actors identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported. Note: The individual profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the Provider Directory actors.</p>
+
+<h3 id="server">Conformance requirements for an Argonaut Provider Directory Server</h3>
+
+<p>Source Resource: <a href="CapabilityStatement-server.xml.html">XML</a>/<a href="CapabilityStatement-server.json.html">JSON</a></p>
+
+<ul>
+  <li>FHIR Version: 3.0.0</li>
+  <li>Supported formats: xml, json</li>
+  <li>Published: 2017-04-30</li>
+  <li>Published by: Argonaut</li>
+</ul>
+
+<p>The Section describes the expected capabilities of the Provider Directory actor which is responsible for providing responses to the queries submitted by Client applications. It describes the complete list of FHIR profiles, RESTful operations, and search parameters supported by US Provider Directory Servers. Provider Directory Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+
+<h4 id="behavior">Behavior</h4>
+
+<p>Description: The Provider Directory Server <strong>SHALL</strong>:</p>
+
+<ul>
+  <li>Support the following US Provider Directory resource profiles:
+    <ul>
+      <li>Argonaut EndPoint</li>
+      <li>Argonaut Location</li>
+      <li>Argonaut Organization</li>
+      <li>Argonaut Practitioner</li>
+      <li>Argonaut PractitionerRole</li>
+    </ul>
+  </li>
+  <li>Return the following response classes:
+    <ul>
+      <li>(Status 200): successful operation</li>
+      <li>(Status 400): invalid parameter</li>
+      <li>(Status 401/4xx): unauthorized request</li>
+      <li>(Status 403): insufficient scope</li>
+      <li>(Status 404): unknown resource</li>
+      <li>(Status 410): deleted resource.</li>
+    </ul>
+  </li>
+  <li>Implement the RESTful behavior according to the FHIR specification.</li>
+  <li>Support <em>json</em> resource formats for all Provider Directory interactions.</li>
+  <li>Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</li>
+</ul>
+
+<h4 id="security">Security:</h4>
+
+<p>US Provider Directory Servers <strong>SHALL</strong>:</p>
+
+<ul>
+  <li>Implement the security requirements documented in the <a href="http://hl7.org/fhir/us/core/security.html">US Core IG</a>.</li>
+  <li>A server has ensured that every API request includes a valid Authorization token, supplied via: <code class="highlighter-rouge">Authorization: Bearer {server-specific-token-here}</code></li>
+  <li>A server has rejected any unauthorized requests by returning an <code class="highlighter-rouge">HTTP 401</code> Unauthorized response code.</li>
+</ul>
+
+<h4 id="profile-interaction-summary">Profile Interaction Summary:</h4>
+
+<ul>
+  <li>All servers <strong>SHALL</strong> make available the <a href="http://build.fhir.org/http.html#read">read</a> and <a href="http://build.fhir.org/http.html#search">search</a> interactions for the Profiles the server chooses to support.</li>
+  <li>All servers <strong>SHOULD</strong> make available the <a href="http://build.fhir.org/http.html#vread">vread</a> and <a href="http://build.fhir.org/http.html#history">history-instance</a> interactions for the Profiles the server chooses to support.</li>
+</ul>
+
+<p><strong>Summary of Provider Directory search criteria</strong></p>
+
+<p>Specific server search capabilities are described in detail below in each of the resource sections.  When returning a PractitionerRole, a Practitioner and Endpoint <strong>SHALL</strong> be included. When searching on Organization or Location, a server <strong>SHALL</strong> support the _include parameter for the endpoint parameter. The client application must properly process a bundle when all resources are included, and must be able to retrieve them when not included.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource Type</th>
+      <th>Supported Profiles</th>
+      <th>Supported Search parameters</th>
+      <th>Supported _includes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#endpoint">Endpoint</a></td>
+      <td>Argonaut Endpoint Profile</td>
+      <td>identifier, organization, name</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#location">Location</a></td>
+      <td>Argonaut Location Profile</td>
+      <td>identifier, name, address</td>
+      <td>Location:endpoint</td>
+    </tr>
+    <tr>
+      <td><a href="#organization">Organization</a></td>
+      <td>Argonaut Organization Profile</td>
+      <td>identifier, name, address</td>
+      <td>Organization:endpoint</td>
+    </tr>
+    <tr>
+      <td><a href="#practitioner">Practitioner</a></td>
+      <td>Argonaut Practitioner Profile</td>
+      <td>identifier, name</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#practitionerrole">PractitionerRole</a></td>
+      <td>Argonaut PractitionerRole Profile</td>
+      <td>practitioner, specialty</td>
+      <td>PractitionerRole:practitioner, PractitionerRole:endpoint</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="resource--details">Resource  Details:</h4>
+
+<h5 id="endpoint">1. Endpoint</h5>
+
+<p>Supported Profiles:  <a href="StructureDefinition-argo-endpoint.html">Argonaut Endpoint Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A server <strong>SHALL</strong> be capable of fetching an Endpoint using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Endpoint?identifier=[system]|[code]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Endpoint?organization=[id]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Endpoint?name=[string]</code></li>
+</ul>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Conformance</th>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>_include (see documentation)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>identifier</td>
+      <td>token</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>name</td>
+      <td>string</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>organization</td>
+      <td>reference</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="location">2. Location</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-location.html">Argonaut Location Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A server <strong>SHALL</strong> be capable of returning a Location using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Location?identifier=[system]|[code]{&amp;_include=Location:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Location?name=[string]{&amp;_include=Location:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Location?address=[string]{&amp;_include=Location:endpoint}</code></li>
+</ul>
+
+<p>Search Parameters:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Conformance</th>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>_include (see documentation)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>identifier</td>
+      <td>token</td>
+      <td>Location:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>name</td>
+      <td>string</td>
+      <td>Location:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>address</td>
+      <td>string</td>
+      <td>Location:endpoint</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="organization">3. Organization</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-organization.html">Argonaut Organization Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A server <strong>SHALL</strong> be capable of returning an Organization using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Organization?identifier=[system]|[code]{&amp;_include=Organization:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Organization?name=[string]{&amp;_include=Organization:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Organization?address=[string]{&amp;_include=Organization:endpoint}</code></li>
+</ul>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Conformance</th>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>_include (see documentation)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>identifier</td>
+      <td>token</td>
+      <td>Organization:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>name</td>
+      <td>string</td>
+      <td>Organization:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>address</td>
+      <td>string</td>
+      <td>Organization:endpoint</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="practitioner">4. Practitioner</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-practitioner.html">Argonaut Practitioner Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A server <strong>SHALL</strong> be capable of returning a Practitioner using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Practitioner?identifier=[system]|[code]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Practitioner?family=[string]&amp;given=[string]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Practitioner?name=[string]</code></li>
+</ul>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Conformance</th>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>_include (see documentation)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>identifier</td>
+      <td>token</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>given</td>
+      <td>string</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>family</td>
+      <td>string</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>name</td>
+      <td>string</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="practitionerrole">5. PractitionerRole</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-practitionerrole.html">Argonaut PractitionerRole Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A server <strong>SHALL</strong> be capable of returning a PractitionerRole using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.family=[string]&amp;given=[string]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+</ul>
+
+<p>A server <strong>MAY</strong> return a PractitionerRole using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.address-city=[city]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.address-city=[city]&amp;specialty=[string]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.near=[lat],[long]&amp;near-distance=[distance]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+</ul>
+
+<p>Search Parameters:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Conformance</th>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>_include (see documentation)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>practitioner.identifier</td>
+      <td>reference + token (chained parameter)</td>
+      <td>PractitionerRole:practitioner, PractitionerRole:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>practitioner.family</td>
+      <td>reference + string (chained parameter)</td>
+      <td>PractitionerRole:practitioner, PractitionerRole:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>SHALL</strong></td>
+      <td>specialty</td>
+      <td>token</td>
+      <td>PractitionerRole:practitioner, PractitionerRole:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>MAY</strong></td>
+      <td>location.address</td>
+      <td>reference + string (chained parameter)</td>
+      <td>PractitionerRole:practitioner, PractitionerRole:endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>MAY</strong></td>
+      <td>location.near, location.distance</td>
+      <td>reference + token (chained parameter), reference + quantity (chained parameter)</td>
+      <td>PractitionerRole:practitioner, PractitionerRole:endpoint</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h3 id="conformance-requirements-for-the-argonaut-provider-directory-client">Conformance requirements for the Argonaut Provider Directory Client</h3>
+
+<p>Source Resource: <a href="CapabilityStatement-client.xml.html">XML</a>/<a href="CapabilityStatement-client.json.html">JSON</a></p>
+
+<ul>
+  <li>FHIR Version: 3.0.0</li>
+  <li>Supported formats: xml, json</li>
+  <li>Published: 2017-04-30</li>
+  <li>Published by: Argonaut</li>
+</ul>
+
+<p>This section describes the expected capabilities of a client actor which is responsible for creating and initiating the queries for information. It is expected that this CapabilityStatement will be used in conjuction with the <a href="capstatements.html#server">Argonaut Provider Directory Server CapabilityStatement</a>. Together they describe the basic expectations for the capabilities of a conformant client application.</p>
+
+<h4 id="behavior-1">Behavior</h4>
+
+<p>The Argonaut Provider Client <strong>SHALL</strong> support fetching and querying of one or more Argonaut Provider profile(s), using the supported RESTful interactions and search parameters declared in the <a href="capstatements.html#server">Argonaut Provider Directory Server CapabilityStatement</a></p>
+
+<p>The Argonaut Provider Client <strong>SHOULD</strong> Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</p>
+
+<h4 id="security-1">Security</h4>
+
+<p>Argonaut Clent <strong>SHALL</strong> implement the security requirements documented in the <a href="http://hl7.org/fhir/us/core/security.html">US Core IG</a>.</p>
+
+<p><strong>Summary of Argonaut Provider search criteria</strong></p>
+
+<p>Specific client search capabilities are described in detail below in each of the resource sections. When a Server returns a PractitionerRole, Location, or Organization, an Endpoint <strong>MAY</strong> be included. The client application <strong>SHALL</strong> properly process a bundle when all resources are included, and be able to retrieve the Endpoint resource when not included.</p>
+
+<h4 id="resource--details-1">Resource  Details:</h4>
+
+<h5 id="endpoint-1">1. EndPoint</h5>
+
+<p>Supported Profiles:  <a href="StructureDefinition-argo-endpoint.html">Argonaut Endpoint Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A Client <strong>SHALL</strong> be capable of fetching an Endpoint using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Endpoint?identifier=[system]|[code]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Endpoint?organization=[id]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Endpoint?name=[string]</code></li>
+</ul>
+
+<h5 id="location-1">2. Location</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-location.html">Argonaut Location Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A client <strong>SHALL</strong> be capable of fetching a Location using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Location?identifier=[system]|[code]{&amp;_include=Location:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Location?name=[string]{&amp;_include=Location:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Location?address=[string]{&amp;_include=Location:endpoint}</code></li>
+</ul>
+
+<h5 id="organization-1">3. Organization</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-organization.html">Argonaut Organization Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A client <strong>SHALL</strong> be capable of fetching an Organization using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Organization?identifier=[system]|[code]{&amp;_include=Organization:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Organization?name=[string]{&amp;_include=Organization:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Organization?address=[string]{&amp;_include=Organization:endpoint}</code></li>
+</ul>
+
+<h5 id="practitioner-1">4. Practitioner</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-practitioner.html">Argonaut Practitioner Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A client <strong>SHALL</strong> be capable of fetching a Practitioner using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/Practitioner?identifier=[system]|[code]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Practitioner?family=[string]&amp;given=[string]</code></li>
+  <li><code class="highlighter-rouge">GET [base]/Practitioner?name=[string]</code></li>
+</ul>
+
+<h5 id="practitionerrole-1">5. PractitionerRole</h5>
+<p>Supported Profiles:  <a href="StructureDefinition-argo-practitionerrole.html">Argonaut PractitionerRole Profile</a></p>
+
+<p>Search Criteria:</p>
+
+<p>A client <strong>SHALL</strong> be capable of fetching a PractitionerRole using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.family=[string]&amp;given=[string]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+</ul>
+
+<p><br /></p>
