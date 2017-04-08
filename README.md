@@ -1,5 +1,5 @@
 
-#  Welcome to the Argonaut-Provider Directory Implemenation Guide Repository
+#  Welcome to the Argonaut-Provider Directory Implementation Guide Repository
 
 Author: [Brett Marquard](brett@riverrockassociates.com)
 
