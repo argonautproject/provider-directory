@@ -1,6 +1,8 @@
 
 #  Welcome to the Argonaut-Provider Directory Implementation Guide Repository
 
+For information about the Argonaut Project follow this [link](http://argonautwiki.hl7.org/index.php?title=Main_Page).
+
 Author: [Brett Marquard](brett@riverrockassociates.com)
 
 Author: [Eric Haas](ehaas@healthedatainc.com)
