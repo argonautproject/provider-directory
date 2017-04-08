@@ -10,7 +10,6 @@ The requirements for the Argonaut Provider Directory data model were drawn from 
 
 #### Use Cases
 
-
 1.  Search for Practitioner by demographics
     -   Name
     -   Specialty
@@ -37,7 +36,7 @@ Example Searches
 2.  Locate a Provider's phone or fax number at a location
     1.  Search Practitioner by Name or Specialty
     2.  Select appropriate Practitioner.
-    3.  Retrieve Practitioner.role.telecom with Patient.telecom.system=phone|fax
+    3.  Retrieve Practitioner.role.telecom with Patient.telecom.system=phone\|fax
 
 #### Assumptions and Preconditions
 
@@ -48,10 +47,10 @@ Additional implementation guidance on the use cases and core data elements will 
 -   Pushing updates to central directory
 -   Bulk registry download
 
-## Profiles
+#### Profiles
   {%  include list-simple-profiles.xhtml %}
 
-## Value Sets
+#### Value Sets
   {% include list-simple-valuesets.xhtml %}
 ------------------------------------------------------------------------
 

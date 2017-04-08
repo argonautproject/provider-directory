@@ -3,9 +3,9 @@
 
 `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]`
 
-**Example:** GET [base]/PractitionerRole?practitioner.identifier=http://hl7.org/fhir/sid/us-npi%7C1497860456
+**Example:** GET [base]/PractitionerRole?practitioner.identifier=http://hl7.org/fhir/sid/us-npi%7C14\|97860456
 
-*Support:* Mandatory to suppport search by Practitioner identifier.
+*Support:* Mandatory to support search by Practitioner identifier.
 
 *Implementation Notes:* Search based on Practitioner identifier (NPI) [(how to search by token)].
 
@@ -16,7 +16,7 @@
 
 **Example:** GET [base]/PractitionerRole?practitioner.name=Henry
 
-*Support:* Mandatory to suppport search by Practitioner name.
+*Support:* Mandatory to support search by Practitioner name.
 
 *Implementation Notes:* Search based on text name [(how to search by string)].
 
@@ -26,7 +26,7 @@
 
 **Example:** GET [base]/PractitionerRole?specialty=http://hl7.org/fhir/practitioner-specialty%7Ccardio
 
-*Support:* Mandatory to suppport search by Specialty.
+*Support:* Mandatory to support search by Specialty.
 
 *Implementation Notes:*  Search based on specialty [(how to search by token)].
 

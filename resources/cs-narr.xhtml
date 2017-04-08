@@ -301,17 +301,17 @@
 <p>A server <strong>SHALL</strong> be capable of returning a PractitionerRole using:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.family=[string]&amp;given=[string]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.family=[string]&amp;given=[string]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
 </ul>
 
 <p>A server <strong>MAY</strong> return a PractitionerRole using:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.address-city=[city]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.address-city=[city]&amp;specialty=[string]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.near=[lat],[long]&amp;near-distance=[distance]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.address-city=[city]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.address-city=[city]&amp;specialty=[string]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?location.near=[lat],[long]&amp;near-distance=[distance]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
 </ul>
 
 <p>Search Parameters:</p>
@@ -451,9 +451,9 @@
 <p>A client <strong>SHALL</strong> be capable of fetching a PractitionerRole using:</p>
 
 <ul>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.family=[string]&amp;given=[string]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
-  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?practitioner.family=[string]&amp;given=[string]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
+  <li><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]{&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole:endpoint}</code></li>
 </ul>
 
 <p><br /></p>

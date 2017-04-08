@@ -3,9 +3,9 @@
 
 `GET [base]/Organization?identifier=[system]|[code]`
 
-**Example:** GET [base]/Organization?identifier=http://hospital.smarthealthit.org/Organization|103270514
+**Example:** GET [base]/Organization?identifier=http://hospital.smarthealthit.org/Organization\|103270514
 
-*Support:* Mandatory to search by identifier. 
+*Support:* Mandatory to search by identifier.
 
 *Implementation Notes:*  Search based on Organization identifier  [(how to search by token)].
 
@@ -15,7 +15,7 @@
 
 **Example:** GET [base]/Organization?name=Health system
 
-*Support:* Mandatory to suppport search by Organization name.
+*Support:* Mandatory to support search by Organization name.
 
 *Implementation Notes:* Search based on text name [(how to search by string)].
 
@@ -27,7 +27,7 @@
 
 **Example:** GET [base]/ORganization?address-postalcode=48104
 
-*Support:*  Mandatory to suppport search by address.
+*Support:*  Mandatory to support search by address.
 
 *Implementation Notes:* Search based on text address [(how to search by string)].
 

@@ -1,9 +1,7 @@
-#### US Core AllergyIntolerance Profile
-
 
 ##### Scope and Usage
 
-This profile sets minimum expectations for the [PractitionerRole](http://build.fhir.org/practitionerrole.html) resource to record, search and fetch allergies/adverse events associated with a patient.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the AllergyIntolerance resource when using this profile.  The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory](http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf) and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents).
+This profile sets minimum expectations for the [PractitionerRole](http://build.fhir.org/practitionerrole.html) resource to record, search and fetch allergies/adverse events associated with a patient.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the PractitionerRole resource when using this profile.  The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory](http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf) and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents).
 
 
 ##### Mandatory Data Elements and Terminology
@@ -27,5 +25,4 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 ##### Examples
 
-- [Bundle-PractitionerRole-with-Practitioner-EndPoint](Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2.xml.html)
-
+- [Bundle-PractitionerRole-with-Practitioner-Endpoint](Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2.xml.html)

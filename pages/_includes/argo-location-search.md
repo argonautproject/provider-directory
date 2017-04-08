@@ -3,9 +3,9 @@
 
 `GET [base]/Location?identifier=[system]|[code]`
 
-**Example:** GET [base]/Location?identifier=http://hospital.smarthealthit.org/Location|123571
+**Example:** GET [base]/Location?identifier=http://hospital.smarthealthit.org/Location\|123571
 
-*Support:* Mandatory to search by identifier. 
+*Support:* Mandatory to search by identifier.
 
 *Implementation Notes:*  Search based on Location identifier  [(how to search by token)].
 
@@ -15,7 +15,7 @@
 
 **Example:** GET [base]/Location?name=Health
 
-*Support:* Mandatory to suppport search by Location name.
+*Support:* Mandatory to support search by Location name.
 
 *Implementation Notes:* Search based on text name [(how to search by string)].
 
@@ -27,7 +27,7 @@
 
 **Example:** GET [base]/Location?address-postalcode=48104
 
-*Support:*  Mandatory to suppport search by address.
+*Support:*  Mandatory to support search by address.
 
 *Implementation Notes:* Search based on text address [(how to search by string)].
 

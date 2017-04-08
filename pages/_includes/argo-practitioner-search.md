@@ -3,9 +3,9 @@
 
 `GET [base]/Practitioner?identifier=[system]|[code]`
 
-**Example:** GET [base]/Practitioner?identifier=http://build.fhir.org/sid/us-npi%7C1497860456
+**Example:** GET [base]/Practitioner?identifier=http://build.fhir.org/sid/us-npi\|1497860456
 
-*Support:* Mandatory to search by identifier. 
+*Support:* Mandatory to search by identifier.
 
 *Implementation Notes:*  Search based on practitioner identifier  [(how to search by token)].
 
@@ -16,7 +16,7 @@
 
 **Example:** GET [base]/Practitioner?family=Smith&given=John
 
-*Support:* Mandatory to suppport search by Practitioner name.
+*Support:* Mandatory to support search by Practitioner name.
 
 *Implementation Notes:* Search based on text name [(how to search by string)].
 

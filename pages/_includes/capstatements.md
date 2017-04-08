@@ -28,7 +28,7 @@ The Section describes the expected capabilities of the Provider Directory actor 
 Description: The Provider Directory Server **SHALL**:
 
 - Support the following US Provider Directory resource profiles:
-   - Argonaut EndPoint
+   - Argonaut Endpoint
    - Argonaut Location
    - Argonaut Organization
    - Argonaut Practitioner
@@ -156,15 +156,15 @@ Search Criteria:
 
 A server **SHALL** be capable of returning a PractitionerRole using:
 
-- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
-- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
-- `GET [base]/PractitionerRole?specialty=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
+- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
+- `GET [base]/PractitionerRole?specialty=[system]|[code]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
 
 A server **MAY** return a PractitionerRole using:
 
-- `GET [base]/PractitionerRole?location.address-city=[city]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
-- `GET [base]/PractitionerRole?location.address-city=[city]&specialty=[string]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
-- `GET [base]/PractitionerRole?location.near=[lat],[long]&near-distance=[distance]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?location.address-city=[city]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
+- `GET [base]/PractitionerRole?location.address-city=[city]&specialty=[string]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
+- `GET [base]/PractitionerRole?location.near=[lat],[long]&near-distance=[distance]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
 
 Search Parameters:
 
@@ -206,7 +206,7 @@ Specific client search capabilities are described in detail below in each of the
 
 #### Resource  Details:
 
-##### 1. EndPoint
+##### 1. Endpoint
 
 Supported Profiles:  [Argonaut Endpoint Profile](StructureDefinition-argo-endpoint.html)
 
@@ -258,8 +258,8 @@ Search Criteria:
 
 A client **SHALL** be capable of fetching a PractitionerRole using:
 
-- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
-- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
-- `GET [base]/PractitionerRole?specialty=[system]|[code]&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint`
+- `GET [base]/PractitionerRole?practitioner.identifier=[system]|[code]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
+- `GET [base]/PractitionerRole?practitioner.family=[string]&given=[string]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
+- `GET [base]/PractitionerRole?specialty=[system]|[code]{&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint}`
 
 <br />

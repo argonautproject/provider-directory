@@ -1,6 +1,6 @@
 ##### Scope and Usage
 
-This profile sets minimum expectations for the [EndPoint](http://build.fhir.org/endpoint.html) resource to record, search and fetch an EndPoint associated with a Provider or Organization.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the AllergyIntolerance resource when using this profile.  The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory](http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf) and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents).
+This profile sets minimum expectations for the [Endpoint](http://build.fhir.org/endpoint.html) resource to record, search and fetch an Endpoint associated with a Provider or Organization.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the Endpoint resource when using this profile.  The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory](http://sihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf) and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents).
 
 
 ##### Mandatory Data Elements and Terminology

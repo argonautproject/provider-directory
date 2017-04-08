@@ -3,9 +3,9 @@
 
 `GET [base]/Endpoint?identifier=[system]|[code]`
 
-**Example:** GET [base]/Endpoint?identifier=http://hospital.smarthealthit.org/EndPoints|103270514
+**Example:** GET [base]/Endpoint?identifier=http://hospital.smarthealthit.org/Endpoints\|103270514
 
-*Support:* Mandatory to search by identifier. 
+*Support:* Mandatory to search by identifier.
 
 *Implementation Notes:*  Search based on Endpoint identifier  [(how to search by token)].
 
@@ -15,7 +15,7 @@
 
 **Example:** GET [base]/Endpoint?organization=2354
 
-*Support:* Mandatory to suppport search by organization.
+*Support:* Mandatory to support search by organization.
 
 *Implementation Notes:* Search based on organization  [(how to search by reference)].
 
@@ -25,7 +25,7 @@
 
 **Example:** GET [base]/Endpoint?name=good health hospital
 
-*Support:* Mandatory to suppport search by EndPoint name.
+*Support:* Mandatory to support search by Endpoint name.
 
 *Implementation Notes:* Search based on name [(how to search by string)].
 
