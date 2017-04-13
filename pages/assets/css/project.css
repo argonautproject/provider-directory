@@ -393,3 +393,21 @@ ul#markdown-toc {
 #markdown-toc li{
 font-size: 1em;
 }
+
+
+/* ----------Publish box styling------*/
+
+.publish-box p{
+  background-color: gold;
+  border:1px solid maroon;
+  padding: 5px;
+}
+
+.publish-box img{
+text-align: baseline;
+}
+
+.publish-box {
+  list-style: none;
+  padding: 0;
+}
