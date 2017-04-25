@@ -31,12 +31,12 @@ Example Searches
 1.  Locate a Provider's Direct address
     1.  Search Practitioner by Name or Specialty
     2.  Select appropriate Practitioner
-    3.  Retrieve Direct address from Practitioner.role.endpoint
+    3.  Retrieve Direct address from PractitionerRole.endpoint
 
 2.  Locate a Provider's phone or fax number at a location
     1.  Search Practitioner by Name or Specialty
-    2.  Select appropriate Practitioner.
-    3.  Retrieve Practitioner.role.telecom with Patient.telecom.system=phone\|fax
+    2.  Select appropriate Practitioner
+    3.  Retrieve PractitionerRole.telecom with PractitionerRole.telecom.system=phone\|fax
 
 #### Assumptions and Preconditions
 
