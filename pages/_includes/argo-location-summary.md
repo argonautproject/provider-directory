@@ -15,6 +15,7 @@ Each Location SHOULD have:
  - NPI preferred
  - Tax id is allowed
  - Local id is allowed in addition to 'authoritative' identifier
+1. A `Location.endpoint`
 
 
 

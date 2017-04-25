@@ -18,7 +18,8 @@ Each Location must have:
 Each Location *SHOULD* have:
 
 1. A Location type
-1. A  Location identifier
+1. A Location identifier
+1. A Location endpoint
 
 **Profile specific implementation guidance:**
 
