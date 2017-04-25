@@ -13,7 +13,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1. An associated practitioner
 1. An associated organization
+1. A list of roles
 1. A list of specialities
+1. An associated location
 1. Contact information
 
 **Profile specific implementation guidance:**
