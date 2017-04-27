@@ -3,7 +3,7 @@
 
 `GET [base]/Practitioner?identifier=[system]|[code]`
 
-**Example:** GET [base]/Practitioner?identifier=http://build.fhir.org/sid/us-npi\|1497860456
+**Example:** GET [base]/Practitioner?identifier={{ site.data.fhir.path }}/sid/us-npi\|1497860456
 
 *Support:* Mandatory to search by identifier.
 
@@ -22,7 +22,7 @@
 
 
 
-  [(how to search by reference)]: http://build.fhir.org/search.html#reference
-  [(how to search by token)]: http://build.fhir.org/search.html#token
- [(how to search by date)]: http://build.fhir.org/search.html#date
- [(how to search by string)]: http://build.fhir.org/search.html#string
+  [(how to search by reference)]: {{ site.data.fhir.path }}/search.html#reference
+  [(how to search by token)]: {{ site.data.fhir.path }}/search.html#token
+ [(how to search by date)]: {{ site.data.fhir.path }}/search.html#date
+ [(how to search by string)]: {{ site.data.fhir.path }}/search.html#string

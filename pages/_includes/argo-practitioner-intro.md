@@ -15,7 +15,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 * none
 
-[Practitioner]: http://build.fhir.org/practitioner.html
+[Practitioner]: {{ site.data.fhir.path }}/practitioner.html
 
 ##### Examples
 

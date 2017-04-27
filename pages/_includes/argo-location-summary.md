@@ -1,6 +1,6 @@
 #### Complete Summary of the Mandatory Requirements
 
-1. A `Location.status` which has an [required](http://build.fhir.org/terminologies.html#required) binding to:
+1. A `Location.status` which has an [required]({{ site.data.fhir.path }}/terminologies.html#required) binding to:
    -   [LocationStatus]  value set.
 1. A `Location.name`
 1. A `Location.telecom`
@@ -21,4 +21,4 @@ Each Location SHOULD have:
 
 
 
-[LocationStatus]: http://build.fhir.org/valueset-location-status.html
+[LocationStatus]: {{ site.data.fhir.path }}/valueset-location-status.html

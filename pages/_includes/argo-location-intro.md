@@ -23,9 +23,9 @@ Each Location *SHOULD* have:
 
 **Profile specific implementation guidance:**
 
- * A server *SHALL* support the [_include](http://build.fhir.org/search.html#include) parameter when retrieving a Location resource.
+ * A server *SHALL* support the [_include]({{ site.data.fhir.path }}/search.html#include) parameter when retrieving a Location resource.
 
-[Location]:  http://build.fhir.org/location.html
+[Location]:  {{ site.data.fhir.path }}/location.html
 
 ##### Examples
 

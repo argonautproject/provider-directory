@@ -18,10 +18,10 @@ Each Organization *SHOULD* have:
 
 **Profile specific implementation guidance:**
 
-* A server *SHALL* support the [_include](http://build.fhir.org/search.html#include) parameter when retrieving a Location resource.
+* A server *SHALL* support the [_include]({{ site.data.fhir.path }}/search.html#include) parameter when retrieving a Location resource.
 
 
-[Organization]: http://build.fhir.org/organization.html
+[Organization]: {{ site.data.fhir.path }}/organization.html
 
 ##### Examples
 

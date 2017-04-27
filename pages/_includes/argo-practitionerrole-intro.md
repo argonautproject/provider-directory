@@ -1,7 +1,7 @@
 
 ##### Scope and Usage
 
-This profile sets minimum expectations for the [PractitionerRole](http://build.fhir.org/practitionerrole.html) resource to record, search and fetch allergies/adverse events associated with a patient.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the PractitionerRole resource when using this profile.  The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory](http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf) and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents).
+This profile sets minimum expectations for the [PractitionerRole]({{ site.data.fhir.path }}/practitionerrole.html) resource to record, search and fetch allergies/adverse events associated with a patient.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the PractitionerRole resource when using this profile.  The requirements for the Argonaut Provider Directory data model were drawn from [IHE Healthcare Provider Directory](http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf) and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents).
 
 
 ##### Mandatory Data Elements and Terminology

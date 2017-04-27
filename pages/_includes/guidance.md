@@ -55,7 +55,7 @@ Figure 6 gives an example of a Health System with multiple organizations. It doe
 
 {% include img.html img="Organizational_Hierarcy.png" caption="Figure 6: Example Organizational Hierarchy" %}
 
-The FHIR STU3 includes an [example Organization hierarchy](http://build.fhir.org/organization.html#example).
+The FHIR STU3 includes an [example Organization hierarchy]({{ site.data.fhir.path }}/organization.html#example).
 
 
 ### Facility Structure
