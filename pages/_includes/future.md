@@ -15,13 +15,35 @@ The Argonaut Provider Directory Implementation Guide uses NUCC for classificatio
 -   Missing Specialties - 'Music Therapist' doesn't include any specialties. When this occurs, this guide recommends populating both Role and Specialty with same code.
 -   Mapping - Many systems don't classify providers by NUCC in their clinical system. The use of NUCC, or another classification terminology, will require mapping for each system.
 
-Additionally, other elements, such as Location.type, would benefit from a more robust value set. When a Provider Directory is balloted, all value sets should be reviewed.
+Additionally, [Location.type]({{ site.data.fhir.path }}/v3/ServiceDeliveryLocationRoleType/vs.html) and [Organization.type]({{ site.data.fhir.path }}/valueset-organization-type.html) are built around classifying one specific type. These value sets should support a specific type and sub-organizations and sub-locations.
+
+When a Provider Directory is balloted, all value sets should be reviewed.
 
 ####  Affiliate Relationships
 
 A key aspect of Provider Directory is to describe relationships between two distinct organization and to track Affiliate Relationships.
 
 Participants in the Argonaut PD development discussed the use of extensions, and profiles on the [Basic]({{ site.data.fhir.path }}/basic.html) resource since FHIR STU3 does not include an appropriate resource for this use case. The development team, in conjunction with HL7 Patient Administration, has proposed a new [OrganizationAffiliation Resource](http://wiki.hl7.org/index.php?title=OrganizationAffiliation_FHIR_Resource_Proposal). This Resource needs additional work to be included in a future FHIR build.
+
+####  Provider Directory Operation
+
+Healthcare facility and organization structures can be quite complex. In a future PD guide, the exact rules for walking the tree from location to organization, and the supporting FHIR [operations]({{ site.data.fhir.path }}/operations.html) to navigate them should be considered.
+
+####  Server Interactions
+
+On each profile page, and in the capability statements, the Argonaut IG defines the required searches a server and client must support. The Argonauts developed the initial searches during the virtual and onsite HL7 connectathons, and during requirements calls. Absent from the specification is specific server interactions:
+Batch download
+
+-   Publish/Subscribe
+-   Creation, Update, and Delete of content in the directory - define rules and technical approach
+-   Differential downloads - only specific changes within a resource
+-   Cache control - support for retrieval of resources based on update date or change
+
+Each of these server interactions is supported by FHIR even though specific new operations may be required to support the provider directory use case. These server interactions may be best defined within a specific network.
+
+####  Identifiers
+
+There is not a unique code system, similar to NPI, for location identifiers. Additional work should be considered to develop a process to cross reference locations and organizations.
 
 ####  Formal HL7 Balloting
 
@@ -30,14 +52,6 @@ The Arognaut Provider Directory work group developed the content of this Impleme
 The content in this guide is freely available to anyone.
 
 A formal HL7 ballot provides an additional level of rigor, and a place for regulators to reference for all industry participants. As part of the ballot additional examples, TestScripts, and conformance assessment of current servers should be considered. A Project Scope Statement is under discussion at HL7 under Project (GET APPROVAL NUMBER).
-
-####  Provider Directory Operation
-
-Healthcare facility and organization structures can be quite complex. In a future PD guide, the exact rules for walking the tree from location to organization, and the supporting FHIR [operations]({{ site.data.fhir.path }}/operations.html) to navigate them should be considered.
-
-####  Identifiers
-
-There is not a unique code system, similar to NPI, for location identifiers. Additional work should be considered to develop a process to cross reference locations and organizations.
 
 ####  Next Steps
 
