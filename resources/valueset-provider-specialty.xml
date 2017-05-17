@@ -12,7 +12,7 @@
 			<value value="http://argonautwiki.hl7.org/"/>
 		</telecom>
 	</contact>
-	<description value="Provider speciality roles codes which are composed of the NUCC Health Care Provider Taxonomy Code Set for providers"/>
+	<description value="Provider speciality roles codes which are composed of the [NUCC Health Care Provider Taxonomy Code Set for providers](http://nucc.org/index.php/code-sets-mainmenu-41/provider-taxonomy-mainmenu-40)"/>
 	<copyright value="This value set includes content from NUCC Health Care Provider Taxonomy Code Set for providers which is copyright © 2016+ American Medical Association.  For commercial use, including sales or licensing, a license must be obtained."/>
 	<compose>
 		<include>

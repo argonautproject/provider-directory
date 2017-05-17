@@ -50,7 +50,7 @@
                 </location>
                 <endpoint>
                     <reference value="Endpoint/example-endpoint-2"/>
-                    <display value="Westwood Physicians Organization ADT "/>
+                    <display value="Westwood Physicians Organization ADT"/>
                 </endpoint>
                 <endpoint>
                     <reference value="http://52.90.126.238:8080/fhir/baseDstu3/Endpoint/Endpoint-71"/>
@@ -179,7 +179,7 @@
                 </meta>
                 <status value="active"/>
                 <connectionType>
-                    <system value="http://hl7.org/fhir/endpoint-connection-type" />
+                    <system value="http://hl7.org/fhir/endpoint-connection-type"/>
                     <code value="direct-project"/>
                 </connectionType>
                 <name value="Brenda.Jennings.Richard.MD@direct.argonaut.org"/>

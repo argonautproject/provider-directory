@@ -12,7 +12,7 @@
 This section provides specific guidance for implementing the Argonaut Provider Directory guide.  The conformance verbs used are defined in [FHIR Conformance Rules]({{ site.data.fhir.path }}/conformance-rules.html#conflang).
 
 
-source pages/\_include/{{page.md_filename}}.md  file
+<!-- source pages/\_include/{{page.md_filename}}.md  file -->
 
 ### Background on the PD Resource Relationships
 
