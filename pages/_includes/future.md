@@ -51,7 +51,7 @@ The Arognaut Provider Directory work group developed the content of this Impleme
 
 The content in this guide is freely available to anyone.
 
-A formal HL7 ballot provides an additional level of rigor, and a place for regulators to reference for all industry participants. As part of the ballot additional examples, TestScripts, and conformance assessment of current servers should be considered. A Project Scope Statement is under discussion at HL7 under Project (GET APPROVAL NUMBER).
+A formal HL7 ballot provides an additional level of rigor, and a place for regulators to reference for all industry participants. As part of the ballot additional examples, TestScripts, and conformance assessment of current servers should be considered. A Healthcare Directory Project Scope Statement is under discussion at HL7.
 
 ####  Next Steps
 
