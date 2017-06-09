@@ -16,6 +16,7 @@
         <value value="(+1) 734-677-7777"/>
     </telecom>
     <address>
+          <text value="3300 Washtenaw Avenue, Suite 227 Amherst MA 01002"/>
     <line value="3300 Washtenaw Avenue, Suite 227"/>
     <city value="Amherst"/>
     <state value="MA"/>

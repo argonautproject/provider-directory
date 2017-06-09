@@ -19,8 +19,7 @@
             <PractitionerRole xmlns="http://hl7.org/fhir">
                 <id value="PractitionerRole-1"/>
                 <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2016-11-15T13:45:31.629-05:00"/>
+                    <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-practitionerrole"/>
                 </meta>
                 <practitioner>
                     <reference value="Practitioner/example-practitioner-1"/>
@@ -68,8 +67,7 @@
             <Practitioner xmlns="http://hl7.org/fhir">
                 <id value="Practitioner-1011"/>
                 <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2016-11-15T13:45:31.288-05:00"/>
+                    <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-practitioner"/>
                 </meta>
                 <identifier>
                     <use value="official"/>
@@ -127,6 +125,7 @@
                     <use value="work"/>
                 </telecom>
                 <address>
+                    <text value="346 W Plum Avenu Dearborn MI 48123"/>
                     <line value="346 W Plum Avenue"/>
                     <city value="Dearborn"/>
                     <state value="MI"/>
@@ -174,8 +173,7 @@
             <Endpoint xmlns="http://hl7.org/fhir">
                 <id value="71"/>
                 <meta>
-                    <versionId value="1"/>
-                    <lastUpdated value="2016-07-24T23:12:16Z"/>
+                    <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-endpoint"/>
                 </meta>
                 <status value="active"/>
                 <connectionType>

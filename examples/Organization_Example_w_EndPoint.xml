@@ -1,5 +1,4 @@
-<Organization xmlns="http://hl7.org/fhir"
- xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<Organization xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <id value="example-organization-2"/>
     <meta>
         <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-organization"/>
@@ -10,8 +9,7 @@
             <xhtml:h1>Organization</xhtml:h1>
             <xhtml:div>
                 <xhtml:p>ID: 393872</xhtml:p>
-                <xhtml:p>Name: Saint Luke's Hospital of Kansas City
-                </xhtml:p>
+                <xhtml:p>Name: Saint Luke's Hospital of Kansas City </xhtml:p>
                 <xhtml:p>NPI: 1063494177</xhtml:p>
                 <xhtml:p>Phone:(816)932-2000</xhtml:p>
                 <xhtml:p>Address:4401 Wornall Rd,, MO, 64111</xhtml:p>
@@ -21,9 +19,9 @@
     <contained>
         <Endpoint xmlns="http://hl7.org/fhir">
             <id value="71"/>
-              <status value="active"/>
+            <status value="active"/>
             <connectionType>
-                <system value="http://hl7.org/fhir/endpoint-connection-type" />
+                <system value="http://hl7.org/fhir/endpoint-connection-type"/>
                 <code value="direct-project"/>
             </connectionType>
             <name value="Dr. Ronald Bone Direct Address"/>
@@ -36,8 +34,7 @@
                     <code value="urn:hl7-org:sdwg:ccda-structuredBody:1.1"/>
                 </coding>
             </payloadType>
-            <payloadMimeType value="text/xml">
-            </payloadMimeType>
+            <payloadMimeType value="text/xml"> </payloadMimeType>
             <address value="mailto:Interoperability@DirectAddress.com"/>
         </Endpoint>
     </contained>
@@ -58,10 +55,12 @@
     </telecom>
     <telecom>
         <system value="other"/>
-        <value value="http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city"/>
+        <value
+            value="http://www.saintlukeshealthsystem.org/locations/saint-lukes-hospital-kansas-city"/>
         <use value="work"/>
     </telecom>
     <address>
+    <text value="3300 Washtenaw Avenue, Suite 227 Amherst MA 01002"/>
 <line value="4401 Wornall Rd,"/>
 <city value="Amherst"/>
 <state value="MA"/>
