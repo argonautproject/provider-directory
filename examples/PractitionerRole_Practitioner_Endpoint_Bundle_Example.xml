@@ -28,14 +28,14 @@
                 </organization>
                 <code>
                     <coding>
-                        <system value="http://hl7.org/fhir/practitioner-role"/>
-                        <code value="doctor"/>
+                        <system value="http://nucc.org/provider-taxonomy"/>
+                        <code value="261QP2300X"/>
                         <display value="Doctor"/>
                     </coding>
                 </code>
                 <specialty>
                     <coding>
-                        <system value="http://nucc.org/fhir/codes"/>
+                        <system value="http://nucc.org/provider-taxonomy"/>
                         <code value="208D00000X"/>
                         <display value="General Practice"/>
                     </coding>
