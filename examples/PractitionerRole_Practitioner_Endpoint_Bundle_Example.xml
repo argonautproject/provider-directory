@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="66c8856b-ba11-4876-8aa8-467aad8c11a2"/>
-    <meta>
-        <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-practitionerrole"/>
-    </meta>
     <type value="searchset"/>
     <total value="1"/>
     <link>
