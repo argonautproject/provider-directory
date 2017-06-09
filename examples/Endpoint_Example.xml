@@ -1,8 +1,7 @@
 <Endpoint xmlns="http://hl7.org/fhir">
     <id value="example-endpoint-1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2016-07-24T23:12:16Z"/>
+        <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-endpoint"/>
     </meta>
     <status value="active"/>
     <connectionType>

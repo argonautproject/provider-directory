@@ -1,5 +1,8 @@
 <Location xmlns="http://hl7.org/fhir">
     <id value="example-location-2"/>
+    <meta>
+        <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-location"/>
+    </meta>
     <!--   HL7 East   -->
     <contained>
         <Endpoint xmlns="http://hl7.org/fhir">

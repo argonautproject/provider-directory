@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="66c8856b-ba11-4876-8aa8-467aad8c11a2"/>
     <meta>
-        <lastUpdated value="2016-11-18T14:26:20.501-05:00"/>
+        <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-practitionerrole"/>
     </meta>
     <type value="searchset"/>
     <total value="1"/>
