@@ -1,6 +1,9 @@
 <Organization xmlns="http://hl7.org/fhir"
  xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <id value="example-organization-2"/>
+    <meta>
+        <profile value="http://fhir.org/guides/argonaut-pd/StructureDefinition/argo-organization"/>
+    </meta>
     <text>
         <status value="generated"/>
         <xhtml:div>
