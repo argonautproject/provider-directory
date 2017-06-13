@@ -52,7 +52,11 @@ Additional implementation guidance on the use cases and core data elements will 
 
 #### Value Sets
   {% include list-simple-valuesets.xhtml %}
+  
 ------------------------------------------------------------------------
+Author: Brett Marquard
+
+Author: Eric Haas
 
   [IHE Healthcare Provider Directory]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf
   [ONC Provider Directory Workshop]: https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents
