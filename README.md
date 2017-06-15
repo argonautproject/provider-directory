@@ -15,7 +15,7 @@ Project Coordinator: [Jennifer Monahan](jmonahan@maehc.org)
 
 ### Find the Argonaut-Provider Directory Implemenation Guide at
 
-http://build.fhir.org/ig/argonautproject/provider-directory
+http://build.fhir.org/ig/argonautproject/provider-directory/index.html
 
 ### Find debugging info about the build
 
