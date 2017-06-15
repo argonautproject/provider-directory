@@ -1,1 +1,140 @@
-{"canonicalBase": "http://fhir.org/guides/argonaut-pd", "defaults": {"Location": {"template-base": "ex.html"}, "CapabilityStatement": {"template-base": "capst.html"}, "Bundle": {"template-base": "ex.html"}, "CodeSystem": {"template-base": "codesys.html"}, "Any": {"template-base": "base.html", "template-format": "format.html"}, "Organization": {"template-base": "ex.html"}, "Endpoint": {"template-base": "ex.html"}, "ValueSet": {"template-base": "vs.html"}, "StructureDefinition": {"template-base": "sd.html", "template-mappings": "sd-mappings.html", "template-defns": "sd-definitions.html"}, "ConceptMap": {"template-base": "cm.html"}, "Practitioner": {"template-base": "ex.html"}}, "spreadsheets": ["endpoint-profile-spreadsheet.xml", "location-profile-spreadsheet.xml", "organization-profile-spreadsheet.xml", "practitioner-profile-spreadsheet.xml", "practitionerrole-profile-spreadsheet.xml"], "source": "ig.xml", "paths": {"qa": "qa", "txCache": "txCache", "pages": "pages", "resources": ["resources", "examples"], "temp": "temp", "specification": "http://build.fhir.org", "output": "output"}, "resources": {"Endpoint/example-endpoint-2": {"source": "Endpoint_Example2.xml", "base": "Endpoint-example-endpoint-2.html"}, "CapabilityStatement/server": {"source": "capabilitystatement-server.xml", "base": "CapabilityStatement-server.html"}, "StructureDefinition/argo-practitionerrole": {"defns": "StructureDefinition-argo-practitionerrole-definitions.html", "base": "StructureDefinition-argo-practitionerrole.html"}, "Practitioner/example-practitioner-1": {"source": "Practitioner_Example1.xml", "base": "Practitioner-example-practitioner-1.html"}, "Location/example-location-1": {"source": "Location_Example1.xml", "base": "Location-example-location-1.html"}, "StructureDefinition/argo-organization": {"defns": "StructureDefinition-argo-organization-definitions.html", "base": "StructureDefinition-argo-organization.html"}, "Organization/example-organization-2": {"source": "Organization_Example_w_EndPoint.xml", "base": "Organization-example-organization-2.html"}, "ValueSet/provider-role": {"source": "valueset-provider-role.xml", "base": "ValueSet-provider-role.html"}, "Organization/example-organization-1": {"source": "Organization_Example.xml", "base": "Organization-example-organization-1.html"}, "StructureDefinition/argo-location": {"defns": "StructureDefinition-argo-location-definitions.html", "base": "StructureDefinition-argo-location.html"}, "StructureDefinition/argo-endpoint": {"defns": "StructureDefinition-argo-endpoint-definitions.html", "base": "StructureDefinition-argo-endpoint.html"}, "Endpoint/example-endpoint-1": {"source": "Endpoint_Example.xml", "base": "Endpoint-example-endpoint-1.html"}, "Location/example-location-2": {"source": "Location_Example2_with_EndPoint.xml", "base": "Location-example-location-2.html"}, "Location/example-location-3": {"source": "Location_Example3_minimum.xml", "base": "Location-example-location-3.html"}, "Bundle/66c8856b-ba11-4876-8aa8-467aad8c11a2": {"source": "PractitionerRole_Practitioner_Endpoint_Bundle_Example.xml", "base": "Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2.html"}, "Practitioner/example-practitioner-2": {"source": "Practitioner_Example2.xml", "base": "Practitioner-example-practitioner-2.html"}, "CapabilityStatement/client": {"source": "capabilitystatement-client.xml", "base": "CapabilityStatement-client.html"}, "StructureDefinition/argo-practitioner": {"defns": "StructureDefinition-argo-practitioner-definitions.html", "base": "StructureDefinition-argo-practitioner.html"}, "ValueSet/provider-specialty": {"source": "valueset-provider-specialty.xml", "base": "ValueSet-provider-specialty.html"}}, "extraTemplates": ["mappings"], "sct-edition": "http://snomed.info/sct/731000124108", "fixed-business-version": "1.0.0", "tool": "jekyll"}
+{
+	"canonicalBase": "http://fhir.org/guides/argonaut-pd",
+	"defaults": {
+		"Location": {
+			"template-base": "ex.html"
+		},
+		"CapabilityStatement": {
+			"template-base": "capst.html"
+		},
+		"Bundle": {
+			"template-base": "ex.html"
+		},
+		"CodeSystem": {
+			"template-base": "codesys.html"
+		},
+		"Any": {
+			"template-base": "base.html",
+			"template-format": "format.html"
+		},
+		"Organization": {
+			"template-base": "ex.html"
+		},
+		"Endpoint": {
+			"template-base": "ex.html"
+		},
+		"ValueSet": {
+			"template-base": "vs.html"
+		},
+		"StructureDefinition": {
+			"template-base": "sd.html",
+			"template-mappings": "sd-mappings.html",
+			"template-defns": "sd-definitions.html"
+		},
+		"ConceptMap": {
+			"template-base": "cm.html"
+		},
+		"Practitioner": {
+			"template-base": "ex.html"
+		}
+	},
+	"spreadsheets": ["endpoint-profile-spreadsheet.xml",
+	"location-profile-spreadsheet.xml",
+	"organization-profile-spreadsheet.xml",
+	"practitioner-profile-spreadsheet.xml",
+	"practitionerrole-profile-spreadsheet.xml"],
+	"source": "ig.xml",
+	"paths": {
+		"qa": "qa",
+		"txCache": "txCache",
+		"pages": "pages",
+		"resources": ["resources",
+		"examples"],
+		"temp": "temp",
+		"specification": "http://build.fhir.org",
+		"output": "output"
+	},
+	"resources": {
+		"Endpoint/example-endpoint-2": {
+			"source": "Endpoint_Example2.xml",
+			"base": "Endpoint-example-endpoint-2.html"
+		},
+		"CapabilityStatement/server": {
+			"source": "capabilitystatement-server.xml",
+			"base": "CapabilityStatement-server.html"
+		},
+		"StructureDefinition/argo-practitionerrole": {
+			"defns": "StructureDefinition-argo-practitionerrole-definitions.html",
+			"base": "StructureDefinition-argo-practitionerrole.html"
+		},
+		"Practitioner/example-practitioner-1": {
+			"source": "Practitioner_Example1.xml",
+			"base": "Practitioner-example-practitioner-1.html"
+		},
+		"Location/example-location-1": {
+			"source": "Location_Example1.xml",
+			"base": "Location-example-location-1.html"
+		},
+		"StructureDefinition/argo-organization": {
+			"defns": "StructureDefinition-argo-organization-definitions.html",
+			"base": "StructureDefinition-argo-organization.html"
+		},
+		"Organization/example-organization-2": {
+			"source": "Organization_Example_w_EndPoint.xml",
+			"base": "Organization-example-organization-2.html"
+		},
+		"ValueSet/provider-role": {
+			"source": "valueset-provider-role.xml",
+			"base": "ValueSet-provider-role.html"
+		},
+		"Organization/example-organization-1": {
+			"source": "Organization_Example.xml",
+			"base": "Organization-example-organization-1.html"
+		},
+		"StructureDefinition/argo-location": {
+			"defns": "StructureDefinition-argo-location-definitions.html",
+			"base": "StructureDefinition-argo-location.html"
+		},
+		"StructureDefinition/argo-endpoint": {
+			"defns": "StructureDefinition-argo-endpoint-definitions.html",
+			"base": "StructureDefinition-argo-endpoint.html"
+		},
+		"Endpoint/example-endpoint-1": {
+			"source": "Endpoint_Example.xml",
+			"base": "Endpoint-example-endpoint-1.html"
+		},
+		"Location/example-location-2": {
+			"source": "Location_Example2_with_EndPoint.xml",
+			"base": "Location-example-location-2.html"
+		},
+		"Location/example-location-3": {
+			"source": "Location_Example3_minimum.xml",
+			"base": "Location-example-location-3.html"
+		},
+		"Bundle/66c8856b-ba11-4876-8aa8-467aad8c11a2": {
+			"source": "PractitionerRole_Practitioner_Endpoint_Bundle_Example.xml",
+			"base": "Bundle-66c8856b-ba11-4876-8aa8-467aad8c11a2.html"
+		},
+		"Practitioner/example-practitioner-2": {
+			"source": "Practitioner_Example2.xml",
+			"base": "Practitioner-example-practitioner-2.html"
+		},
+		"CapabilityStatement/client": {
+			"source": "capabilitystatement-client.xml",
+			"base": "CapabilityStatement-client.html"
+		},
+		"StructureDefinition/argo-practitioner": {
+			"defns": "StructureDefinition-argo-practitioner-definitions.html",
+			"base": "StructureDefinition-argo-practitioner.html"
+		},
+		"ValueSet/provider-specialty": {
+			"source": "valueset-provider-specialty.xml",
+			"base": "ValueSet-provider-specialty.html"
+		}
+	},
+	"extraTemplates": ["mappings"],
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"fixed-business-version": "1.0.0",
+  "version" : "3.0.1",
+	"tool": "jekyll"
+}
